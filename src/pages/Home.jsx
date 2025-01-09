@@ -4,6 +4,8 @@ import MissionVision from '../components/home/MissionVision'
 import AboutNote from '../components/home/AboutNote'
 import KeyFunctions from '../components/home/KeyFunctions'
 import StatisticsImpact from '../components/home/StatisticsImpact'
+import RecentProjects from '../components/home/RecentProjects'
+import GetInvolved from '../components/home/GetInvolved'
 
 const Home = () => {
   return (
@@ -18,10 +20,14 @@ const Home = () => {
         </div>
       </div>
       <>
+        <GetInvolved/>
+      </>
+      <>
         <KeyFunctions/>
       </>
 
       <StatisticsImpact/>
+      <RecentProjects/>
 
     </>
   )
