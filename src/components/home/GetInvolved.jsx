@@ -7,14 +7,15 @@ const GetInvolved = () => {
 
   const words = [
     {
-      text: "Enroll for free to our",
+      text: "Partner with SLeSCA to promote",
+      className: "text-white",
     },
     {
       text: "",
     },
     {
-      text: "Computer Basics.",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "sustainable farming.",
+      className: "text-green-500",
     },
   ];
 
