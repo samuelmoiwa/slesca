@@ -71,7 +71,7 @@ function NavBar() {
           to={subItem.href}
           className={`
             block px-3 py-2 text-sm text-white
-            hover:underline hover:decoration-blue-500
+            hover:underline hover:decoration-green-500
             transition duration-150 ease-in-out font-Poppins font-semibold
           `}
           onClick={() => handleNavClick(subItem.href)}
@@ -83,7 +83,7 @@ function NavBar() {
   );
 
   return (
-    <nav className="bg-gray-900 shadow top-0 w-full fixed z-50" aria-label="Top">
+    <nav className="bg-green-900 shadow top-0 w-full fixed z-50" aria-label="Top">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex w-full justify-between lg:justify-center h-16">
           <div className="flex items-center lg:ml-20">
@@ -125,11 +125,11 @@ function NavBar() {
                   to={item.href}
                   className={`
                     px-3 py-2 text-sm text-white
-                    hover:underline hover:decoration-blue-500 hover:decoration-2
+                    hover:underline hover:decoration-green-500 hover:decoration-2
                     transition duration-150 ease-in-out font-Poppins font-semibold
                     ${
                       activeNav === item.href
-                        ? "underline decoration-blue-500 decoration-2"
+                        ? "underline decoration-green-500 decoration-2"
                         : ""
                     }
                   `}
