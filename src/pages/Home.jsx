@@ -6,6 +6,8 @@ import KeyFunctions from '../components/home/KeyFunctions'
 import StatisticsImpact from '../components/home/StatisticsImpact'
 import RecentProjects from '../components/home/RecentProjects'
 import GetInvolved from '../components/home/GetInvolved'
+import Testimonials from '../components/home/Testimonials'
+import CallToAction from '../components/home/CallToAction'
 
 const Home = () => {
   return (
@@ -19,15 +21,23 @@ const Home = () => {
           <AboutNote/>
         </div>
       </div>
+
       <>
         <GetInvolved/>
       </>
+
       <>
         <KeyFunctions/>
       </>
 
       <StatisticsImpact/>
       <RecentProjects/>
+
+      <CallToAction/>
+
+      <Testimonials/>
+
+
 
     </>
   )

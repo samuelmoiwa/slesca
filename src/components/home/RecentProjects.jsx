@@ -57,7 +57,7 @@ const RecentProjects = () => {
 
   return (
     <section className="bg-gray-100 py-12">
-      <div className="container mx-auto px-4 md:px-8 lg:px-16">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-[90rem]">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-800">
             Recent Projects
