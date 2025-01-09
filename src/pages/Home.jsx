@@ -2,6 +2,8 @@ import React from 'react'
 import HeroSection from '../components/home/HeroSection'
 import MissionVision from '../components/home/MissionVision'
 import AboutNote from '../components/home/AboutNote'
+import KeyFunctions from '../components/home/KeyFunctions'
+import StatisticsImpact from '../components/home/StatisticsImpact'
 
 const Home = () => {
   return (
@@ -15,6 +17,12 @@ const Home = () => {
           <AboutNote/>
         </div>
       </div>
+      <>
+        <KeyFunctions/>
+      </>
+
+      <StatisticsImpact/>
+
     </>
   )
 }

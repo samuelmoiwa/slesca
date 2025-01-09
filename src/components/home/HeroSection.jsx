@@ -4,7 +4,8 @@ import { BackgroundGradientAnimation } from '../ui/background-gradient-animation
 const HeroSection = () => {
   return (
     <BackgroundGradientAnimation>
-    <div className="absolute z-40 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-2xl text-center md:text-3xl lg:text-6xl">
+    <div className="absolute z-40 inset-0 flex flex-col items-center justify-center
+      text-white font-bold px-4 pointer-events-none text-2xl text-center md:text-3xl lg:text-6xl">
       <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 max-w-[50rem]">
         Welcome to Sierra Leone Seed Certification Agency (SLeSCA)
       </p>
