@@ -9,7 +9,7 @@ import instagram from "../asset/icons_Instagram.svg";
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-blue-900 to-gray-900 py-8">
+    <footer className="bg-gradient-to-b from-green-900 to-gray-900 py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center">
           <img src={logo} alt="Logo" className="h-16 mr-2" />
@@ -18,10 +18,10 @@ function Footer() {
           <div className="md:mr-8">
             <h4 className="text-gray-100 uppercase font-semibold">Contact Me</h4>
             <p className="text-gray-200 mt-2">
-              Address: 123 Street, Freetown, Sierra Leone
+              Address: SLeSCA Head Office, Freetown, Sierra Leone
             </p>
             <p className="text-gray-200 mt-1">Phone: +232 00 000 000</p>
-            <p className="text-gray-200 mt-1">Email: info@bdd-sl.com</p>
+            <p className="text-gray-200 mt-1">Email:  info@slesca.gov.sl</p>
           </div>
           <div className="mt-4 md:mt-0">
             <h4 className="text-gray-100 uppercase font-semibold">Social Media</h4>
@@ -70,9 +70,9 @@ function Footer() {
         </div>
         <hr className="border-gray-600 my-6" />
         <div className="text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Bridge The Digital Divide Sierra Leone. All rights reserved.
+          &copy; {new Date().getFullYear()} Sierra Leone Seed Certification Agency (SLeSCA). All rights reserved.
           ~ Design By <span className='hover:text-gray-300'> <a href='https://github.com/samuelmoiwa'
-          target="_blank" rel="noopener noreferrer"> moiwa </a></span>
+          target="_blank" rel="noopener noreferrer">Ing. Moiwa </a></span>
         </div>
       </div>
     </footer>
