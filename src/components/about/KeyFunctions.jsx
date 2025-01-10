@@ -134,14 +134,29 @@ const SkeletonOne = () => {
 
 const SkeletonTwo = () => {
   const variants = {
-    initial: { width: 0 },
-    animate: { width: "100%", transition: { duration: 0.2 } },
+    initial: {
+      width: 0,
+    },
+    animate: {
+      width: "100%",
+      transition: {
+        duration: 0.2,
+      },
+    },
+    hover: {
+      width: ["0%", "100%"],
+      transition: {
+        duration: 1,
+      },
+    },
+
   };
 
   return (
     <motion.div
       initial="initial"
       animate="animate"
+      whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
       {[...Array(6)].map((_, i) => (
