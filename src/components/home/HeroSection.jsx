@@ -1,19 +1,14 @@
 import React from 'react'
-import { BackgroundGradientAnimation } from '../ui/background-gradient-animation'
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
+import Lottie from 'lottie-react';
+import greeng from '../../lottiefiles/greeng.json'
 
 const HeroSection = () => {
   return (
 
 
-
-
-
-
-
-
-
     <BackgroundBeamsWithCollision>
+
       <div className='w-full flex flex-col justify-center items-center px-2'>
 
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center text-white font-sans tracking-tight max-w-[60rem]">
@@ -33,7 +28,12 @@ const HeroSection = () => {
             Ensuring high-quality seeds and fostering growth for Sierra Leone's food security.
           </p>
         </div>
+        <div className='absolute inset-0 w-full h-full z-0'>
+          <Lottie animationData={greeng} width={300} height={300} loop={true} className=" w-full" />
+        </div>
+
       </div>
+
     </BackgroundBeamsWithCollision>
 
   )
