@@ -7,6 +7,8 @@ import KeyFunctions from '../components/about/KeyFunctions'
 import AchievementsAndImpact from '../components/about/AchievementsAndImpact'
 import CallToAction from '../components/home/CallToAction'
 import WhySLeSCAMatters from '../components/about/WhySLeSCAMatters'
+import LeadershipAndTeam from '../components/about/LeadershipAndTeam'
+import TestimonialsSection from '../components/about/TestimonialsSection'
 
 
 const About = () => {
@@ -28,6 +30,9 @@ const About = () => {
       <AchievementsAndImpact/>
       <CallToAction/>
       <WhySLeSCAMatters/>
+      <LeadershipAndTeam/>
+      <TestimonialsSection/>
+
 
 
     </>
