@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from '../components/about/HeroSection'
 import MissionVision from '../components/about/MissionVision'
 import AboutUsSection from '../components/about/AboutUsSection'
+import AuthorityOfSLeSCA from '../components/about/AuthorityOfSLeSCA'
 
 
 const About = () => {
@@ -15,6 +16,7 @@ const About = () => {
         >
           <MissionVision/>
           <AboutUsSection/>
+          <AuthorityOfSLeSCA/>
         </div>
       </div>
 
