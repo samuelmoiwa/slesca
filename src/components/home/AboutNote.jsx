@@ -4,7 +4,7 @@ import missionImage from '../../image/9.jpg'
 const AboutNote = () => {
   return (
     <div className="w-full max-w-[80rem] px-4 py-6 bg-green-100 shadow mt-[7rem]">
-      <div className="flex flex-col md:flex-row-reverse items-center md:space-x-8 gap-4">
+      <div className="flex flex-col md:flex-row-reverse items-center gap-4">
         {/* Text Section */}
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold text-green-700 mb-4">About SLeSCA</h2>
