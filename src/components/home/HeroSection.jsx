@@ -1,21 +1,40 @@
 import React from 'react'
 import { BackgroundGradientAnimation } from '../ui/background-gradient-animation'
+import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 
 const HeroSection = () => {
   return (
-    <BackgroundGradientAnimation>
-    <div className="absolute z-40 inset-0 flex flex-col items-center justify-center
-      text-white font-bold px-4 pointer-events-none text-2xl text-center md:text-3xl lg:text-6xl">
-      <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 max-w-[50rem]">
-        Welcome to Sierra Leone Seed Certification Agency (SLeSCA)
-      </p>
 
-      <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80
-        to-white/20 max-w-[90rem] text-lg text-center md:text-xl lg:text-4xl mt-[5rem]">
-        Ensuring high-quality seeds and fostering growth for Sierra Leone's food security.
-      </p>
-    </div>
-</BackgroundGradientAnimation>
+
+
+
+
+
+
+
+
+    <BackgroundBeamsWithCollision>
+      <div className='w-full flex flex-col justify-center items-center px-2'>
+
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center text-white font-sans tracking-tight max-w-[60rem]">
+          Welcome to Sierra Leone Seed Certification Agency (SLeSCA){" "}
+          <div className="mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+            <div className="bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4
+            from-orange-500 via-violet-500 to-blue-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+              <span className=""></span>
+            </div>
+
+          </div>
+        </h2>
+
+        <div className="bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4
+          from-orange-500 via-violet-500 to-blue-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+          <p className=" text-center sm:text-3xl">
+            Ensuring high-quality seeds and fostering growth for Sierra Leone's food security.
+          </p>
+        </div>
+      </div>
+    </BackgroundBeamsWithCollision>
 
   )
 }
