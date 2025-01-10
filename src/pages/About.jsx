@@ -5,6 +5,8 @@ import AboutUsSection from '../components/about/AboutUsSection'
 import AuthorityOfSLeSCA from '../components/about/AuthorityOfSLeSCA'
 import KeyFunctions from '../components/about/KeyFunctions'
 import AchievementsAndImpact from '../components/about/AchievementsAndImpact'
+import CallToAction from '../components/home/CallToAction'
+import WhySLeSCAMatters from '../components/about/WhySLeSCAMatters'
 
 
 const About = () => {
@@ -24,6 +26,8 @@ const About = () => {
 
       <KeyFunctions/>
       <AchievementsAndImpact/>
+      <CallToAction/>
+      <WhySLeSCAMatters/>
 
 
     </>
