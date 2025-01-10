@@ -12,6 +12,10 @@ import {
 import { GiSeedling } from "react-icons/gi";
 import { motion } from "framer-motion";
 
+import inspect_seed from '../../image/inspect_seed.jpg'
+import seed_quality from '../../image/seed_quality.jpg'
+import seeds from '../../image/seeds.png'
+
 export function KeyFunctions() {
   const functions = [
     {
@@ -204,9 +208,94 @@ const SkeletonThree = () => {
   );
 };
 
-const SkeletonFour = () => (
-  <motion.div className="w-full h-full flex justify-center items-center bg-gray-200 rounded-lg"></motion.div>
-);
+const SkeletonFour = () => {
+  const first = {
+    initial: {
+      x: 20,
+      rotate: -5,
+    },
+    hover: {
+      x: 0,
+      rotate: 0,
+    },
+  };
+  const second = {
+    initial: {
+      x: -20,
+      rotate: 5,
+    },
+    hover: {
+      x: 0,
+      rotate: 0,
+    },
+  };
+  return (
+    <motion.div
+  initial="initial"
+  animate="animate"
+  whileHover="hover"
+  className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
+>
+  {/* Card 1: Regulation */}
+  <motion.div
+    variants={first}
+    className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+  >
+    <img
+      src= {inspect_seed} // Replace with a relevant image for "Regulation"
+      alt="Regulation"
+      height="100"
+      width="100"
+      className="rounded-full h-10 w-10"
+    />
+    <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+      Comprehensive Seed Regulation
+    </p>
+    <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
+      Core Function
+    </p>
+  </motion.div>
+
+  {/* Card 2: Certification */}
+  <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+    <img
+      src={seed_quality} // Replace with a relevant image for "Certification"
+      alt="Certification"
+      height="100"
+      width="100"
+      className="rounded-full h-10 w-10"
+    />
+    <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+      Quality Seed Certification
+    </p>
+    <p className="border border-blue-500 bg-blue-100 dark:bg-blue-900/20 text-blue-600 text-xs rounded-full px-2 py-0.5 mt-4">
+      Assured Quality
+    </p>
+  </motion.div>
+
+  {/* Card 3: Licensing */}
+  <motion.div
+    variants={second}
+    className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+  >
+    <img
+      src={seeds} // Replace with a relevant image for "Licensing"
+      alt="Licensing"
+      height="100"
+      width="100"
+      className="rounded-full h-10 w-10"
+    />
+    <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+      Seed Licensing & Registration
+    </p>
+    <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
+      Authorized Services
+    </p>
+  </motion.div>
+</motion.div>
+
+  );
+}
 
 const SkeletonFive = () => (
   <motion.div
