@@ -64,7 +64,7 @@ export function KeyFunctions() {
         </div>
 
         {/* Grid Layout */}
-        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+        <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[20rem]">
           {functions.map((func, index) => (
             <BentoGridItem
               key={index}
