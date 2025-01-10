@@ -28,8 +28,8 @@ const HeroSection = () => {
             Ensuring high-quality seeds and fostering growth for Sierra Leone's food security.
           </p>
         </div>
-        <div className='absolute inset-0 bottom-0 w-full z-0 mb-[10rem] h-[10rem]'>
-          <Lottie animationData={greeng} width={300} height={300} loop={true} className=" w-full mb-[20rem] sm:mt-[30rem] mt-[14rem]" />
+        <div className='absolute inset-0 bottom-0 w-full z-0 mb-[10rem] flex justify-center flex-col items-center'>
+          <Lottie animationData={greeng} width={300} height={300} loop={true} className=" w-full  lg:mt-[30rem] mt-[28rem] md:mt-[26rem] max-w-[150rem]" />
         </div>
 
       </div>
