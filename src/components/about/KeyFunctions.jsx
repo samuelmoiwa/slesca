@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import { cn } from "../../lib/utils";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid"; // Adjust path as needed
 import {
   FaRegCheckCircle,
@@ -10,6 +9,9 @@ import {
 } from "react-icons/fa";
 import { GiSeedling } from "react-icons/gi";
 import { motion } from "framer-motion";
+
+import inspect_seed from '../../image/inspect_seed.jpg'
+import seed_quality from '../../image/seed_quality.jpg'
 
 export function KeyFunctions() {
   const functions = [
@@ -117,12 +119,14 @@ const SkeletonThree = () => (
     style={{
       backgroundSize: "400% 400%",
     }}
-  />
+  >
+    <img src={inspect_seed} alt="" className="max-h-[10rem] w-full rounded-lg"/>
+  </motion.div>
 );
 
 const SkeletonFour = () => (
   <motion.div className="w-full h-full flex justify-center items-center bg-gray-200 rounded-lg">
-    <p className="text-gray-700 text-sm">Processing...</p>
+    <img src={seed_quality} alt="" className="max-h-[11rem] w-full rounded-lg"/>
   </motion.div>
 );
 
