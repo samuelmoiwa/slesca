@@ -4,6 +4,7 @@ import MissionVision from '../components/about/MissionVision'
 import AboutUsSection from '../components/about/AboutUsSection'
 import AuthorityOfSLeSCA from '../components/about/AuthorityOfSLeSCA'
 import KeyFunctions from '../components/about/KeyFunctions'
+import AchievementsAndImpact from '../components/about/AchievementsAndImpact'
 
 
 const About = () => {
@@ -22,6 +23,7 @@ const About = () => {
       </div>
 
       <KeyFunctions/>
+      <AchievementsAndImpact/>
 
 
     </>
