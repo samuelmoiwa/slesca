@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/about/seedLicenseProcedures/HeroSection'
+import LicenseProcedures from '../components/about/seedLicenseProcedures/LicenseProcedures'
 const SeedLicenseProcedures = () => {
   return (
     <>
@@ -8,7 +9,7 @@ const SeedLicenseProcedures = () => {
       <div className=' w-full py-14 flex flex-col justify-center
         items-center mt-5 mb-10'
       >
-        
+        <LicenseProcedures/>
       </div>
     </div>
   </>
