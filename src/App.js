@@ -12,6 +12,7 @@ import SLeSCAStructure from './pages/SLeSCAStructure';
 import SeedsAct from './pages/SeedsAct';
 import SeedLicenseProcedures from './pages/SeedLicenseProcedures';
 import RenewalOfSeedLicense from './pages/RenewalOfSeedLicense';
+import RecentProjects from './pages/RecentProjects';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/about/seeds-act" element={<SeedsAct />} />
         <Route path="/about/license-procedures" element={<SeedLicenseProcedures />} />
         <Route path="/about/renewal-license" element={<RenewalOfSeedLicense />} />
+        <Route path="/about/recent-projects" element={<RecentProjects />} />
       </Routes>
 
 
