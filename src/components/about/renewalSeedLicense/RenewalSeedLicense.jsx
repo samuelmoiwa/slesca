@@ -10,7 +10,6 @@ import {
   FaCheckCircle,
   FaMoneyBillWave,
 } from "react-icons/fa";
-import renewalImage from "../../../image/6.jpg"; // Replace with your actual image path
 
 const RenewalSeedLicense = () => {
   const formik = useFormik({
