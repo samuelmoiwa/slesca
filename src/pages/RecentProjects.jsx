@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/about/recentProjects/HeroSection'
+import RecentProjectsComponent from '../components/about/recentProjects/RecentProjectsComponent'
 
 const RecentProjects = () => {
   return (
@@ -9,7 +10,7 @@ const RecentProjects = () => {
       <div className=' w-full py-14 flex flex-col justify-center
         items-center mt-5 mb-10'
       >
-       
+        <RecentProjectsComponent/>
       </div>
     </div>
   </>
