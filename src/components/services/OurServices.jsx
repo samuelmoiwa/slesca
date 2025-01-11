@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -134,13 +135,15 @@ const Services = () => {
           <h2 className="text-3xl font-bold text-green-800">
             Ready to Get Started?
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 mt-4 mb-10">
             Contact us today to learn more about how SLeSCA can support your
             agricultural journey.
           </p>
-          <button className="mt-6 bg-green-800 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700">
+          <Link
+            to="/contact-us"
+            className=" bg-green-800 text-white text-center px-8 py-3 rounded-lg shadow-md hover:bg-green-700">
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 
 const CallToAction = () => {
   return (
@@ -11,12 +12,19 @@ const CallToAction = () => {
           Partner with SLeSCA to ensure seed quality, promote sustainable farming, and achieve national food security.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <button className="px-6 py-3 bg-white text-green-800 font-semibold rounded-md hover:bg-gray-200 transition">
+          {/* Use Link for navigation */}
+          <Link
+            to="/contact-us"
+            className="px-6 py-3 bg-white text-green-800 font-semibold rounded-md hover:bg-gray-200 transition"
+          >
             Contact Us Today
-          </button>
-          <button className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition">
+          </Link>
+          <Link
+            to="/about/license-procedures"
+            className="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-md hover:bg-yellow-600 transition"
+          >
             Start Your Seed Licensing Journey
-          </button>
+          </Link>
         </div>
       </div>
     </section>

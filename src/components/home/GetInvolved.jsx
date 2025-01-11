@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect.js";
+import { Link } from "react-router-dom";
 
 
 const GetInvolved = () => {
-  const [isFormOpen, setIsFormOpen] = useState(false);
 
   const words = [
     {
@@ -23,12 +23,12 @@ const GetInvolved = () => {
     <div className="flex flex-col items-center justify-center h-[25rem] bg-green-900">
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button
-          className="w-40 h-10 rounded-xl bg-white text-black border border-black text-sm"
-          onClick={() => setIsFormOpen(true)}
+        <Link
+          to="/contact-us"
+          className="px-8 py-3 rounded-xl bg-white text-black border border-black text-center text-sm"
         >
           Contact Us
-        </button>
+        </Link>
       </div>
 
     </div>
