@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import OurTeam from './pages/OurTeam';
 import PublicNotice from './pages/PublicNotice';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<OurTeam />} />
         <Route path="/public-notices" element={<PublicNotice />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
 
 
