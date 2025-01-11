@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/contactUs/HeroSection'
+import ContactUsComponent from '../components/contactUs/ContactUsComponent'
 
 const ContactUs = () => {
   return (
@@ -9,7 +10,7 @@ const ContactUs = () => {
       <div className=' w-full py-14 flex flex-col justify-center
         items-center mt-5 mb-10'
       >
-        
+        <ContactUsComponent/>
       </div>
     </div>
   </>
