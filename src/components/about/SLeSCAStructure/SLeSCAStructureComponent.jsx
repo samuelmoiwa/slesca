@@ -83,7 +83,7 @@ const SLeSCAStructureComponent = () => {
                 <div className="bg-white shadow-md p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto z-10">
                   <FaCogs className="text-green-800 text-3xl" />
                 </div>
-                <p className="text-center text-lg text-gray-700 mt-6">Executive Management</p>
+                <p className="text-center sm:text-lg text-gray-700 mt-6">Executive Management</p>
               </li>
               <li className="relative flex items-center">
                 <div className="bg-white shadow-md p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto z-10">
