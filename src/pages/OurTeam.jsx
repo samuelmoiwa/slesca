@@ -3,6 +3,7 @@ import HeroSection from '../components/team/HeroSection'
 import BoardOfDirectors from '../components/team/BoardOfDirectors'
 import ManagementTeam from '../components/team/ManagementTeam'
 import RestOfTeam from '../components/team/RestOfTeam'
+import CallToAction from '../components/home/CallToAction'
 
 const OurTeam = () => {
   return (
@@ -28,13 +29,16 @@ const OurTeam = () => {
               </p>
             </div>
           </div>
-
+        </div>
+        <div className='w-full flex flex-col justify-center'>
           <BoardOfDirectors />
           <ManagementTeam />
+          <CallToAction/>
           <RestOfTeam/>
-
-
         </div>
+
+
+
       </div>
     </>
   )
