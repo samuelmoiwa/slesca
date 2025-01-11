@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import OurTeam from './pages/OurTeam';
 import PublicNotice from './pages/PublicNotice';
 import ContactUs from './pages/ContactUs';
+import FAQ from './pages/FAQ';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/team" element={<OurTeam />} />
         <Route path="/public-notices" element={<PublicNotice />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/faqs" element={<FAQ />} />
       </Routes>
 
 
