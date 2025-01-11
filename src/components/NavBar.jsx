@@ -31,11 +31,11 @@ const navigation = [
   {
     name: "Our Team",
     href: "/team",
-    current: false,
-    subLinks: [
-      { name: "Board of Directors", href: "/team/board" },
-      { name: "Management Team", href: "/team/management" },
-    ],
+    // current: false,
+    // subLinks: [
+    //   { name: "Board of Directors", href: "/team/board" },
+    //   { name: "Management Team", href: "/team/management" },
+    // ],
   },
   { name: "Public Notices", href: "/public-notices", current: false },
   { name: "Contact Us", href: "/contact-us", current: false },
