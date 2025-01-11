@@ -71,8 +71,6 @@ function Footer() {
         <hr className="border-gray-600 my-6" />
         <div className="text-center text-gray-500 text-sm">
           &copy; {new Date().getFullYear()} Sierra Leone Seed Certification Agency (SLeSCA). All rights reserved.
-          ~ Design By <span className='hover:text-gray-300'> <a href='https://github.com/samuelmoiwa'
-          target="_blank" rel="noopener noreferrer">Ing. Moiwa </a></span>
         </div>
       </div>
     </footer>
