@@ -107,11 +107,6 @@ const LicenseProcedures = () => {
               transition={{ delay: index * 0.3 }}
             >
               {step.icon}
-              <img
-                src={step.image}
-                alt={step.title}
-                className="w-full h-32 object-cover rounded my-4"
-              />
               <h3 className="text-lg font-bold text-gray-800">{step.title}</h3>
               <p className="text-gray-600 mt-2">{step.description}</p>
             </motion.div>
