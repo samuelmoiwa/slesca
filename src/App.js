@@ -10,6 +10,7 @@ import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import SLeSCAStructure from './pages/SLeSCAStructure';
 import SeedsAct from './pages/SeedsAct';
+import SeedLicenseProcedures from './pages/SeedLicenseProcedures';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/faqs" element={<FAQ />} />
         <Route path="/about/structure" element={<SLeSCAStructure />} />
         <Route path="/about/seeds-act" element={<SeedsAct />} />
+        <Route path="/about/license-procedures" element={<SeedLicenseProcedures />} />
       </Routes>
 
 
