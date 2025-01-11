@@ -138,7 +138,7 @@ const Notice = () => {
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <div className="bg-white rounded-lg p-8 shadow-lg max-w-[40rem] w-full">
               <button
-                className="absolute top-4 right-4 bg-red-100 px-5 py-3 rounded-full text-red-500 hover:text-white hover:bg-red-600 sm:text-2xl"
+                className="top-4 right-4 bg-red-100 px-2 py-1 rounded-full text-red-500 hover:text-white hover:bg-red-600 sm:text-xl mb-3"
                 onClick={closeModal}
               >
                 ✕
