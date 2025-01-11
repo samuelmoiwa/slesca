@@ -6,33 +6,48 @@ const notices = [
     title: "Seed Licensing Renewal Deadline",
     date: "2025-01-15",
     description:
-      "All seed operators are reminded to renew their licenses by January 15th, 2025. Failure to renew may result in penalties.",
+      "All seed operators are reminded to renew their licenses by January 15th, 2025. Failure to renew may result in penalties. This is an important notice to ensure compliance with the 2018 Seed Act. Contact the SLeSCA office for more details.",
     featured: true,
+    tags: ["Licensing", "Compliance"],
+    image: "https://via.placeholder.com/600x400",
   },
   {
     id: 2,
     title: "Upcoming Farmer Training Program",
     date: "2025-02-01",
     description:
-      "Join our upcoming training program on sustainable seed management. Registration closes January 25th.",
+      "Join our upcoming training program on sustainable seed management. Registration closes January 25th. This training is an opportunity to enhance your skills and knowledge in seed management.",
     featured: false,
+    tags: ["Training", "Farmers"],
+    image: "https://via.placeholder.com/600x400",
   },
   {
     id: 3,
     title: "National Seed Catalogue Update",
     date: "2025-03-10",
     description:
-      "The updated National Seed Catalogue is now available. Operators must ensure compliance with the latest standards.",
+      "The updated National Seed Catalogue is now available. Operators must ensure compliance with the latest standards. The catalogue reflects the newest seed varieties approved for use.",
     featured: true,
+    tags: ["Catalogue", "Standards"],
+    image: "https://via.placeholder.com/600x400",
   },
 ];
 
 const Notice = () => {
   const [search, setSearch] = useState("");
+  const [selectedNotice, setSelectedNotice] = useState(null);
 
   const filteredNotices = notices.filter((notice) =>
     notice.title.toLowerCase().includes(search.toLowerCase())
   );
+
+  const openModal = (notice) => {
+    setSelectedNotice(notice);
+  };
+
+  const closeModal = () => {
+    setSelectedNotice(null);
+  };
 
   return (
     <section className="py-12 bg-gray-50">
@@ -78,7 +93,10 @@ const Notice = () => {
                   <p className="text-gray-600 mt-4">
                     {notice.description.slice(0, 100)}...
                   </p>
-                  <button className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800">
+                  <button
+                    className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800"
+                    onClick={() => openModal(notice)}
+                  >
                     Read More
                   </button>
                 </div>
@@ -104,13 +122,50 @@ const Notice = () => {
                 <p className="text-gray-600 mt-4">
                   {notice.description.slice(0, 100)}...
                 </p>
-                <button className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800">
+                <button
+                  className="mt-4 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800"
+                  onClick={() => openModal(notice)}
+                >
                   Read More
                 </button>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Modal */}
+        {selectedNotice && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+            <div className="bg-white rounded-lg p-8 shadow-lg max-w-[40rem] w-full">
+              <button
+                className="absolute top-4 right-4 bg-red-100 px-5 py-3 rounded-full text-red-500 hover:text-white hover:bg-red-600 sm:text-2xl"
+                onClick={closeModal}
+              >
+                ✕
+              </button>
+              <img
+                src={selectedNotice.image}
+                alt={selectedNotice.title}
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                {selectedNotice.title}
+              </h3>
+              <p className="text-sm text-gray-500">Date: {selectedNotice.date}</p>
+              <p className="text-gray-600 mt-4">{selectedNotice.description}</p>
+              <div className="mt-4">
+                {selectedNotice.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-2"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
