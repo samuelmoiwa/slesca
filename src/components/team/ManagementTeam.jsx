@@ -52,8 +52,8 @@ const ManagementTeam = () => {
   };
 
   return (
-    <section className="w-full flex justify-center">
-      <div className="py-12 bg-gray-50 max-w-[90rem]">
+    <section className="w-full flex justify-center items-center">
+      <div className="py-12 bg-gray-50 w-full max-w-[90rem]">
          <div className="container mx-auto px-6 lg:px-16 max-w-7xl">
         <h2 className="text-3xl font-bold text-green-800 text-center mb-8">
           Management Team
