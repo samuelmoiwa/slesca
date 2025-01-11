@@ -11,7 +11,6 @@ const navigation = [
     current: false,
     subLinks: [
       { name: "SLeSCA Structure", href: "/about/structure" },
-      { name: "Mission and Vision Statement", href: "/about/mission-vision" },
       { name: "The Seeds Act", href: "/about/seeds-act" },
       { name: "Seed License Procedures", href: "/about/license-procedures" },
       { name: "Renewal of Seed License", href: "/about/renewal-license" },
