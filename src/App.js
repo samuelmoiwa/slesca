@@ -8,6 +8,7 @@ import OurTeam from './pages/OurTeam';
 import PublicNotice from './pages/PublicNotice';
 import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
+import SLeSCAStructure from './pages/SLeSCAStructure';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/public-notices" element={<PublicNotice />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/faqs" element={<FAQ />} />
+        <Route path="/about/structure" element={<SLeSCAStructure />} />
       </Routes>
 
 
