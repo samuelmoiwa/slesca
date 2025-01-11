@@ -13,6 +13,7 @@ import SeedsAct from './pages/SeedsAct';
 import SeedLicenseProcedures from './pages/SeedLicenseProcedures';
 import RenewalOfSeedLicense from './pages/RenewalOfSeedLicense';
 import RecentProjects from './pages/RecentProjects';
+import SeedQualityCertification from './pages/SeedQualityCertification';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/about/license-procedures" element={<SeedLicenseProcedures />} />
         <Route path="/about/renewal-license" element={<RenewalOfSeedLicense />} />
         <Route path="/about/recent-projects" element={<RecentProjects />} />
+        <Route path="/services/quality-certification" element={<SeedQualityCertification />} />
       </Routes>
 
 
