@@ -8,6 +8,7 @@ import RecentProjects from '../components/home/RecentProjects'
 import GetInvolved from '../components/home/GetInvolved'
 import Testimonials from '../components/home/Testimonials'
 import CallToAction from '../components/home/CallToAction'
+import Banner from '../components/home/Banner'
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       <div className='bg-gradient-to-b from-blue-50 to-green-200 w-screen h-full flex
         justify-center items-center flex-col'
       >
-          <HeroSection/>
+          <Banner/>
         <div className=' w-full py-14 flex flex-col justify-center
           items-center mt-5 mb-10'
         >
