@@ -84,7 +84,7 @@ const Banner = () => {
                     <img
                       src={member.image}
                       alt='team'
-                      className="w-full h-full rounded-tl-[12rem] rounded-br-[6rem] rounded-bl-3xl rounded-tr-2xl"
+                      className="w-full h-full rounded-tl-[7rem] rounded-br-[6rem] rounded-bl-3xl rounded-tr-2xl"
                     />
                   </div>
                 </div>
