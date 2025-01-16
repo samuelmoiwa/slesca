@@ -59,7 +59,7 @@ const Banner = () => {
         flex-col items-center antialiased">
       <NavBar />
 
-      <div className='w-full h-full flex sm:flex-row flex-col-reverse justify-center items-center max-w-7xl'>
+      <div className='w-full h-full flex sm:flex-row flex-col-reverse justify-center items-center max-w-7xl pt-[5rem]'>
       {/* <Lottie animationData={shape_lottie} width={200} height={200} loop={true} /> */}
 
         <div className='sm:w-[32rem] lg:w-[40rem] w-full flex justify-center items-center z-0'>
