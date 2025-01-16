@@ -30,7 +30,8 @@ function Footer() {
             <p className="text-gray-200 mt-1">Phone: +232 76 906 032 / +232 78 051 704</p>
             <p className="text-gray-200 mt-1">Email:  info@slesca.gov.sl</p>
           </div>
-          <div className='w-full flex flex-col md:justify-center items-center text-white font-Poppins font-semibold'>
+
+          <div className='w-full flex flex-col md:justify-center items-center text-white font-Poppins font-semibold md:my-0 my-5'>
             <Link
             className="hover:underline hover:decoration-green-500 hover:decoration-2 transition duration-150 ease-in-out"
             to='/faqs'
@@ -39,7 +40,7 @@ function Footer() {
             </Link>
             <Link
             className="hover:underline hover:decoration-green-500 hover:decoration-2 transition duration-150 ease-in-out"
-            to='/about/seeds-act'
+            to='/document/seeds-act'
             >
               The Seeds Act
             </Link>
@@ -52,6 +53,7 @@ function Footer() {
 
 
           </div>
+
           <div className="w-full flex md:flex-row md:justify-end mt-4 md:mt-0">
             <div className="flex flex-col md:justify-end">
               <h4 className="text-gray-100 uppercase font-semibold">Social Media</h4>
@@ -100,7 +102,9 @@ function Footer() {
           </div>
 
         </div>
+
         <hr className="border-gray-600 my-6" />
+
         <div className="text-center text-gray-500 text-sm">
           &copy; {new Date().getFullYear()} Sierra Leone Seed Certification Agency (SLeSCA). All rights reserved.
         </div>
