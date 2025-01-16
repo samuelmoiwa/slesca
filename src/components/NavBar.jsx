@@ -38,7 +38,16 @@ const navigation = [
   },
   { name: "Public Notices", href: "/public-notices", current: false },
   { name: "Contact Us", href: "/contact-us", current: false },
-  { name: "FAQs", href: "/faqs", current: false },
+  {
+    name: "Documents",
+    href: "/services",
+    current: false,
+    subLinks: [
+      { name: "Seeds Act", href: "/services/quality-certification" },
+      { name: "Policies", href: "/services/regulatory-compliance" },
+      { name: "⁠⁠Regulatory and Compliance", href: "/services/training-workshops" },
+    ],
+  },
 ];
 
 function NavBar() {
