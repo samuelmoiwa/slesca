@@ -103,7 +103,7 @@ const Banner = () => {
               /> */}
             </div>
             <div className="relative z-10 text-start lg:ml-[8rem] sm:ml-[3rem]">
-              <h1 className="lg:text-5xl text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
+              <h1 className="lg:text-5xl text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-blue-600 font-sans font-bold">
               Welcome <br /> to Sierra Leone <br /> Seed Certification Agency (SLeSCA)
               </h1>
               <p></p>
@@ -113,7 +113,7 @@ const Banner = () => {
               <Link to='/about'
                 onClick={knowMore}
                 className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border
-                  border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]
+                  border-slate-800 bg-[linear-gradient(110deg,#3C4B87FF,45%,#223550FF,55%,#425D93FF)] bg-[length:200%_100%]
                   px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400
                   focus:ring-offset-2 focus:ring-offset-slate-50 hover:cursor-pointer sm:w-64 w-full"
               >
