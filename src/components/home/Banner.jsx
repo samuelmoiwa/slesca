@@ -4,6 +4,7 @@ import NavBar from '../NavBar'
 import {BackgroundBeams} from '../ui/background-beams'
 import Lottie from 'lottie-react';
 import shape_lottie from '../../lottiefiles/shape.json'
+import plant_lottie from '../../lottiefiles/plant.json'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -95,11 +96,11 @@ const Banner = () => {
 
           <div className="flex flex-col items-center justify-center mx-auto p-4 relative sm:-ml-[6rem]">
             <div className="absolute inset-0 z-0 flex items-center justify-center opacity-70">
-              <Lottie
-                animationData={shape_lottie}
+              {/* <Lottie
+                animationData={plant_lottie}
                 loop={true}
                 className="w-[50rem] sm:-ml-[5rem]"
-              />
+              /> */}
             </div>
             <div className="relative z-10 text-start lg:ml-[8rem] sm:ml-[3rem]">
               <h1 className="lg:text-5xl text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
