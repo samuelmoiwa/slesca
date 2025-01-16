@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../asset/logo.jpg";
+import logo from "../asset/Coat_of_arms.png";
 import AOS from '../components/aosConfig';
 
 const navigation = [
@@ -83,12 +83,14 @@ function NavBar() {
 
   return (
     <nav className="bg-green-950 shadow top-0 w-full fixed z-50" aria-label="Top">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex w-full justify-between lg:justify-center h-16">
-          <div className="flex items-center lg:ml-20">
-            <NavLink to="/" className="text-xl font-bold font-Poppins text-white">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="flex w-full justify-between  h-16">
+          <div className="flex items-center lg:ml-20 justify-start">
+            <NavLink to="/" className="text-xl flex flex-row justify-center items-center font-bold font-Poppins text-white">
+
               <img className="block h-8 w-auto lg:hidden" src={logo} alt="SLeSCA" />
               <img className="hidden h-8 w-auto lg:block" src={logo} alt="SLeSCA" />
+              <p className="text-pretty ml-2 mt-2">SLeSCA</p>
             </NavLink>
           </div>
 
@@ -116,7 +118,7 @@ function NavBar() {
             </button>
           </div>
 
-          <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 mr-20">
+          <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 mr-52">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
                 <NavLink
