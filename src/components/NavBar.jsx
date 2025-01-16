@@ -41,8 +41,8 @@ const navigation = [
     href: "/document",
     current: false,
     subLinks: [
-      { name: "Seeds Act", href: "/about/seeds-act" },
-      { name: "Policies", href: "/services/regulatory-compliance" },
+      { name: "Seeds Act", href: "/document/seeds-act" },
+      { name: "Policies", href: "/document/policies" },
       { name: "⁠⁠Regulatory and Compliance", href: "/services/regulatory-compliance" },
     ],
   },

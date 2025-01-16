@@ -17,6 +17,7 @@ import SeedQualityCertification from './pages/SeedQualityCertification';
 import RegulatoryCompliance from './pages/RegulatoryCompliance';
 import TrainingWorkshops from './pages/TrainingWorkshops';
 import Documents from './pages/Documents';
+import Policies from './pages/Policies';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/faqs" element={<FAQ />} />
         <Route path="/about/structure" element={<SLeSCAStructure />} />
-        <Route path="/about/seeds-act" element={<SeedsAct />} />
+        <Route path="/document/seeds-act" element={<SeedsAct />} />
         <Route path="/about/license-procedures" element={<SeedLicenseProcedures />} />
         <Route path="/about/renewal-license" element={<RenewalOfSeedLicense />} />
         <Route path="/about/recent-projects" element={<RecentProjects />} />
@@ -39,6 +40,7 @@ function App() {
         <Route path="/services/regulatory-compliance" element={<RegulatoryCompliance />} />
         <Route path="/services/training-workshops" element={<TrainingWorkshops />} />
         <Route path="/document" element={<Documents />} />
+        <Route path="/document/policies" element={<Policies />} />
       </Routes>
 
 
