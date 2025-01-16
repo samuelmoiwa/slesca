@@ -90,7 +90,7 @@ function NavBar() {
 
               <img className="block h-8 w-auto lg:hidden" src={logo} alt="SLeSCA" />
               <img className="hidden h-8 w-auto lg:block" src={logo} alt="SLeSCA" />
-              <p className="text-pretty ml-2 mt-2">SLeSCA</p>
+              <p className="text-pretty md:ml-2 md:mt-2">SLeSCA</p>
             </NavLink>
           </div>
 

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import logo from '../asset/logo.jpg'
+import logo from '../asset/Coat_of_arms.png'
 import twitter from "../asset/icon_twitter.svg";
 import linkedIn from "../asset/icon_linkedin.svg";
 import facebook from "../asset/icon_Facebook.svg";
@@ -12,8 +12,10 @@ function Footer() {
   return (
     <footer className="bg-gradient-to-b from-green-900 to-gray-900 py-8">
       <div className="container mx-auto px-4 max-w-[90rem]">
-        <div className="flex justify-center items-center">
+
+        <div className="flex justify-center items-center font-bold font-Poppins text-white">
           <img src={logo} alt="Logo" className="h-16 mr-2" />
+          <p className="text-pretty md:ml-2 md:mt-7 md:text-2xl">SLeSCA</p>
         </div>
 
         <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
@@ -21,9 +23,11 @@ function Footer() {
           <div className="w-full md:mr-8">
             <h4 className="text-gray-100 uppercase font-semibold">Contact Me</h4>
             <p className="text-gray-200 mt-2">
-              Address: SLeSCA Head Office, Freetown, Sierra Leone
+              Sierra Leone Seed Certification Agency
+              Tower Hill, Freetown, Sierra Leone
+              West Africa
             </p>
-            <p className="text-gray-200 mt-1">Phone: +232 00 000 000</p>
+            <p className="text-gray-200 mt-1">Phone: +232 76 906 032 / +232 78 051 704</p>
             <p className="text-gray-200 mt-1">Email:  info@slesca.gov.sl</p>
           </div>
           <div className='w-full flex flex-col md:justify-center items-center text-white font-Poppins font-semibold'>
@@ -55,7 +59,7 @@ function Footer() {
 
               <a
                   rel="facebook noreferrer"
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=100092613360652"
                   target="_blank"
                   className="px-1 py-2 flex justify-center
                   transform hover:scale-110 transition-transform duration-300"
