@@ -1,6 +1,5 @@
 "use client";
 import React from 'react'
-import NavBar from '../NavBar'
 import {BackgroundBeams} from '../ui/background-beams'
 import Lottie from 'lottie-react';
 import shape_lottie from '../../lottiefiles/shape.json'
@@ -56,10 +55,10 @@ const Banner = () => {
   return (
     <>
       <div className="lg:h-[46rem]  w-full  bg-gradient-to-t from-green-950 via-green-800 to-green-950 relative flex
-        flex-col items-center antialiased">
-      <NavBar />
+        flex-col items-center antialiased"
+      >
 
-      <div className='w-full h-full flex sm:flex-row flex-col-reverse justify-center items-center max-w-7xl pt-[5rem]'>
+      <div className='w-full h-full flex sm:flex-row flex-col-reverse justify-center items-center max-w-7xl md:mt-[0rem] mt-[3rem]'>
       {/* <Lottie animationData={shape_lottie} width={200} height={200} loop={true} /> */}
 
         <div className='sm:w-[32rem] lg:w-[40rem] w-full flex justify-center items-center z-0'>
@@ -121,7 +120,7 @@ const Banner = () => {
               </Link>
             </div>
           </div>
-        </div>
+      </div>
 
       <BackgroundBeams />
     </div>
