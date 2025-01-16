@@ -38,7 +38,7 @@ const navigation = [
   { name: "Contact Us", href: "/contact-us", current: false },
   {
     name: "Documents",
-    href: "/services",
+    href: "/document",
     current: false,
     subLinks: [
       { name: "Seeds Act", href: "/about/seeds-act" },

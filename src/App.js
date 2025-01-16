@@ -16,6 +16,7 @@ import RecentProjects from './pages/RecentProjects';
 import SeedQualityCertification from './pages/SeedQualityCertification';
 import RegulatoryCompliance from './pages/RegulatoryCompliance';
 import TrainingWorkshops from './pages/TrainingWorkshops';
+import Documents from './pages/Documents';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/services/quality-certification" element={<SeedQualityCertification />} />
         <Route path="/services/regulatory-compliance" element={<RegulatoryCompliance />} />
         <Route path="/services/training-workshops" element={<TrainingWorkshops />} />
+        <Route path="/document" element={<Documents />} />
       </Routes>
 
 
