@@ -11,7 +11,6 @@ const navigation = [
     current: false,
     subLinks: [
       { name: "SLeSCA Structure", href: "/about/structure" },
-      { name: "The Seeds Act", href: "/about/seeds-act" },
       { name: "Seed License Procedures", href: "/about/license-procedures" },
       { name: "Renewal of Seed License", href: "/about/renewal-license" },
       { name: "Recent Projects", href: "/about/recent-projects" },
@@ -23,7 +22,6 @@ const navigation = [
     current: false,
     subLinks: [
       { name: "Seed Quality Certification", href: "/services/quality-certification" },
-      { name: "Regulatory Compliance", href: "/services/regulatory-compliance" },
       { name: "Training and Workshops", href: "/services/training-workshops" },
     ],
   },
@@ -43,9 +41,9 @@ const navigation = [
     href: "/services",
     current: false,
     subLinks: [
-      { name: "Seeds Act", href: "/services/quality-certification" },
+      { name: "Seeds Act", href: "/about/seeds-act" },
       { name: "Policies", href: "/services/regulatory-compliance" },
-      { name: "⁠⁠Regulatory and Compliance", href: "/services/training-workshops" },
+      { name: "⁠⁠Regulatory and Compliance", href: "/services/regulatory-compliance" },
     ],
   },
 ];
