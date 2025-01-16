@@ -39,6 +39,12 @@ function Footer() {
             >
               The Seeds Act
             </Link>
+            <Link
+            className="hover:underline hover:decoration-green-500 hover:decoration-2 transition duration-150 ease-in-out"
+            to='/services/training-workshops'
+            >
+              Training and Workshops
+            </Link>
 
 
           </div>
