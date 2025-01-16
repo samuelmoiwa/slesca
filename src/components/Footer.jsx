@@ -16,7 +16,7 @@ function Footer() {
           <img src={logo} alt="Logo" className="h-16 mr-2" />
         </div>
 
-        <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4 bg-red-500">
+        <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
 
           <div className="w-full md:mr-8">
             <h4 className="text-gray-100 uppercase font-semibold">Contact Me</h4>
@@ -26,56 +26,66 @@ function Footer() {
             <p className="text-gray-200 mt-1">Phone: +232 00 000 000</p>
             <p className="text-gray-200 mt-1">Email:  info@slesca.gov.sl</p>
           </div>
-          <div className='w-full text-white hover:underline hover:decoration-green-500 hover:decoration-2
-                    transition duration-150 ease-in-out font-Poppins font-semibold'>
+          <div className='w-full flex flex-col md:justify-center items-center text-white font-Poppins font-semibold'>
             <Link
+            className="hover:underline hover:decoration-green-500 hover:decoration-2 transition duration-150 ease-in-out"
             to='/faqs'
             >
               FAQs
             </Link>
+            <Link
+            className="hover:underline hover:decoration-green-500 hover:decoration-2 transition duration-150 ease-in-out"
+            to='/about/seeds-act'
+            >
+              The Seeds Act
+            </Link>
+
+
           </div>
-          <div className="w-full mt-4 md:mt-0">
-            <h4 className="text-gray-100 uppercase font-semibold">Social Media</h4>
-            <div className="flex mt-2">
+          <div className="w-full flex md:flex-row md:justify-end mt-4 md:mt-0">
+            <div className="flex flex-col md:justify-end">
+              <h4 className="text-gray-100 uppercase font-semibold">Social Media</h4>
+              <div className="flex mt-2 md:justify-end">
 
-            <a
-                rel="facebook noreferrer"
-                href="#"
-                target="_blank"
-                className="px-1 py-2 flex justify-center
-                transform hover:scale-110 transition-transform duration-300"
-            >
-                <img class="w-8 h-8" src={facebook} alt="image" />
-            </a>
+              <a
+                  rel="facebook noreferrer"
+                  href="#"
+                  target="_blank"
+                  className="px-1 py-2 flex justify-center
+                  transform hover:scale-110 transition-transform duration-300"
+              >
+                  <img class="w-8 h-8" src={facebook} alt="image" />
+              </a>
 
-            <a
-                rel="twitter noreferrer"
-                href="#"
-                target="_blank"
-                className="px-1 py-2 flex justify-center
-                transform hover:scale-110 transition-transform duration-300"
-            >
-                <img class="w-8 h-8" src={twitter} alt="image" />
-            </a>
+              <a
+                  rel="twitter noreferrer"
+                  href="#"
+                  target="_blank"
+                  className="px-1 py-2 flex justify-center
+                  transform hover:scale-110 transition-transform duration-300"
+              >
+                  <img class="w-8 h-8" src={twitter} alt="image" />
+              </a>
 
-            <a
-                rel="linkedin noreferrer"
-                href="#"
-                target="_blank"
-                className="px-1 py-2 flex justify-center
-                transform hover:scale-110 transition-transform duration-300"
-            >
-                <img class="w-8 h-8 " src={linkedIn} alt="image" />
-            </a>
+              <a
+                  rel="linkedin noreferrer"
+                  href="#"
+                  target="_blank"
+                  className="px-1 py-2 flex justify-center
+                  transform hover:scale-110 transition-transform duration-300"
+              >
+                  <img class="w-8 h-8 " src={linkedIn} alt="image" />
+              </a>
 
-            <a
-                rel="phone"
-                href="tel: +23279000000"
-                className="px-1 py-2 flex justify-center
-                transform hover:scale-110 transition-transform duration-300"
-            >
-                <img class="w-8 h-8 " src={instagram} alt="image" />
-            </a>
+              <a
+                  rel="phone"
+                  href="tel: +23279000000"
+                  className="px-1 py-2 flex justify-center
+                  transform hover:scale-110 transition-transform duration-300"
+              >
+                  <img class="w-8 h-8 " src={instagram} alt="image" />
+              </a>
+              </div>
             </div>
           </div>
 
