@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../asset/Coat_of_arms.png";
 import AOS from '../components/aosConfig';
 
@@ -82,8 +82,8 @@ function NavBar() {
   return (
     <nav className="bg-green-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
 
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div className="flex w-full justify-between  h-16">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+        <div className="flex w-[90%] justify-between items-center h-16">
           <div className="flex items-center lg:ml-20 justify-start">
             <NavLink to="/" className="text-xl flex flex-row justify-center items-center font-bold font-Poppins text-white">
 
@@ -117,34 +117,44 @@ function NavBar() {
             </button>
           </div>
 
-          <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 mr-52">
-            {navigation.map((item) => (
-              <div key={item.name} className="relative group">
-                <NavLink
-                  exact
-                  to={item.href}
-                  className={`
-                    px-3 py-2 text-sm text-white
-                    hover:underline hover:decoration-green-500 hover:decoration-2
-                    transition duration-150 ease-in-out font-Poppins font-semibold
-                    ${
-                      activeNav === item.href
-                        ? "underline decoration-green-500 decoration-2"
-                        : ""
-                    }
-                  `}
-                  onClick={() => handleNavClick(item.href)}
-                >
-                  {item.name}
-                </NavLink>
-                {item.subLinks && (
-                  <div className="absolute hidden group-hover:block bg-gray-800 shadow-lg p-2 mt-2 rounded">
-                    {renderSubLinks(item.subLinks)}
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className="flex w-full justify-center">
+            <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 mr-52">
+              {navigation.map((item) => (
+                <div key={item.name} className="relative group">
+                  <NavLink
+                    exact
+                    to={item.href}
+                    className={`
+                      px-3 py-2 text-sm text-white
+                      hover:underline hover:decoration-green-500 hover:decoration-2
+                      transition duration-150 ease-in-out font-Poppins font-semibold
+                      ${
+                        activeNav === item.href
+                          ? "underline decoration-green-500 decoration-2"
+                          : ""
+                      }
+                    `}
+                    onClick={() => handleNavClick(item.href)}
+                  >
+                    {item.name}
+                  </NavLink>
+                  {item.subLinks && (
+                    <div className="absolute hidden group-hover:block bg-gray-800 shadow-lg p-2 mt-2 rounded">
+                      {renderSubLinks(item.subLinks)}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+            <Link
+              to='#'
+              className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded"
+            >
+              Get License
+            </Link>
           </div>
+
+
         </div>
       </div>
 
