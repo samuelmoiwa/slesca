@@ -44,21 +44,21 @@ const ContactUsComponent = () => {
               <FaMapMarkerAlt className="text-green-700 text-3xl" />
               <div>
                 <h4 className="text-lg font-bold text-gray-800">Our Address</h4>
-                <p className="text-gray-600">123 Seed Avenue, Freetown, Sierra Leone</p>
+                <p className="text-gray-600 max-w-[20rem]">Sierra Leone Seed Certification Agency Tower Hill, Freetown, Sierra Leone West Africa</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <FaPhone className="text-green-700 text-3xl" />
               <div>
                 <h4 className="text-lg font-bold text-gray-800">Call Us</h4>
-                <p className="text-gray-600">+232-123-456-789</p>
+                <p className="text-gray-600">+232 76 906 032 / +232 78 051 704</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <FaEnvelope className="text-green-700 text-3xl" />
               <div>
                 <h4 className="text-lg font-bold text-gray-800">Email Us</h4>
-                <p className="text-gray-600">contact@slesca.gov.sl</p>
+                <p className="text-gray-600">info@slesca.gov.sl</p>
               </div>
             </div>
           </motion.div>
