@@ -34,18 +34,17 @@ const navigation = [
     //   { name: "Management Team", href: "/team/management" },
     // ],
   },
-  { name: "Public Notices", href: "/public-notices", current: false },
-  { name: "Contact Us", href: "/contact-us", current: false },
   {
-    name: "Documents",
-    href: "/document",
-    current: false,
+    name: "Documents", href: "/document", current: false,
     subLinks: [
       { name: "Seeds Act", href: "/document/seeds-act" },
       { name: "Policies", href: "/document/policies" },
       { name: "⁠⁠Regulatory and Compliance", href: "/services/regulatory-compliance" },
     ],
   },
+  { name: "Public Notices", href: "/public-notices", current: false },
+  { name: "Legal", href: "#", current: false },
+  { name: "Contact Us", href: "/contact-us", current: false },
 ];
 
 function NavBar() {
