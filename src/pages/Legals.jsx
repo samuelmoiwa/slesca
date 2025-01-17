@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../components/legal/HeroSection'
+import LegalComponent from '../components/legal/LegalComponent'
 
 const Legals = () => {
   return (
@@ -9,7 +10,7 @@ const Legals = () => {
       <div className=' w-full py-14 flex flex-col justify-center
         items-center mt-5 mb-10'
       >
-        
+        <LegalComponent/>
       </div>
     </div>
   </>
