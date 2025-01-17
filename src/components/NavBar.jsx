@@ -12,9 +12,6 @@ const navigation = [
     subLinks: [
       { name: "Our Team", href: "/team" },
       { name: "SLeSCA Structure", href: "/about/structure" },
-      { name: "Seed License Procedures", href: "/about/license-procedures" },
-      { name: "Renewal of Seed License", href: "/about/renewal-license" },
-      { name: "Recent Projects", href: "/about/recent-projects" },
     ],
   },
   {
@@ -24,6 +21,8 @@ const navigation = [
     subLinks: [
       { name: "Seed Quality Certification", href: "/services/quality-certification" },
       { name: "Training and Workshops", href: "/services/training-workshops" },
+      { name: "Seed License Procedures", href: "/about/license-procedures" },
+      { name: "Renewal of Seed License", href: "/about/renewal-license" },
     ],
   },
   { name: "Projects", href: "/recent-projects", current: false },
