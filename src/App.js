@@ -35,7 +35,7 @@ function App() {
         <Route path="/document/seeds-act" element={<SeedsAct />} />
         <Route path="/about/license-procedures" element={<SeedLicenseProcedures />} />
         <Route path="/about/renewal-license" element={<RenewalOfSeedLicense />} />
-        <Route path="/about/recent-projects" element={<RecentProjects />} />
+        <Route path="/recent-projects" element={<RecentProjects />} />
         <Route path="/services/quality-certification" element={<SeedQualityCertification />} />
         <Route path="/services/regulatory-compliance" element={<RegulatoryCompliance />} />
         <Route path="/services/training-workshops" element={<TrainingWorkshops />} />

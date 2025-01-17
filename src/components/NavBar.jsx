@@ -10,6 +10,7 @@ const navigation = [
     href: "/about",
     current: false,
     subLinks: [
+      { name: "Our Team", href: "/team" },
       { name: "SLeSCA Structure", href: "/about/structure" },
       { name: "Seed License Procedures", href: "/about/license-procedures" },
       { name: "Renewal of Seed License", href: "/about/renewal-license" },
@@ -25,15 +26,7 @@ const navigation = [
       { name: "Training and Workshops", href: "/services/training-workshops" },
     ],
   },
-  {
-    name: "Our Team",
-    href: "/team",
-    // current: false,
-    // subLinks: [
-    //   { name: "Board of Directors", href: "/team/board" },
-    //   { name: "Management Team", href: "/team/management" },
-    // ],
-  },
+  { name: "Projects", href: "/recent-projects", current: false },
   {
     name: "Documents", href: "/document", current: false,
     subLinks: [
