@@ -13,7 +13,7 @@ import Banner from '../components/home/Banner'
 const Home = () => {
   return (
     <>
-      <div className='bg-gradient-to-b from-blue-50 to-green-200 w-screen h-full flex
+      <div className='w-full bg-gradient-to-b from-blue-50 to-green-200 h-full flex
         justify-center items-center flex-col'
       >
           <Banner/>
