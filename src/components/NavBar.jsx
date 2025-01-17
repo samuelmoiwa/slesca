@@ -80,7 +80,8 @@ function NavBar() {
   );
 
   return (
-    <nav className="bg-green-950 shadow top-0 w-full fixed z-50" aria-label="Top">
+    <nav className="bg-green-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
+
       <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex w-full justify-between  h-16">
           <div className="flex items-center lg:ml-20 justify-start">
@@ -175,6 +176,7 @@ function NavBar() {
           </div>
         </div>
       )}
+
     </nav>
   );
 }
