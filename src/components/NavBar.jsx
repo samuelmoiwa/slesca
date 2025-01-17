@@ -117,7 +117,7 @@ function NavBar() {
             </button>
           </div>
 
-          <div className="flex w-full justify-center">
+
             <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 mr-52">
               {navigation.map((item) => (
                 <div key={item.name} className="relative group">
@@ -145,16 +145,13 @@ function NavBar() {
                   )}
                 </div>
               ))}
+              <Link
+                to='#'
+                className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded ml-[5rem]"
+              >
+                Get License
+              </Link>
             </div>
-            <Link
-              to='#'
-              className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded"
-            >
-              Get License
-            </Link>
-          </div>
-
-
         </div>
       </div>
 
