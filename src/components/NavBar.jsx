@@ -118,40 +118,45 @@ function NavBar() {
           </div>
 
 
-            <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 mr-52">
-              {navigation.map((item) => (
-                <div key={item.name} className="relative group">
-                  <NavLink
-                    exact
-                    to={item.href}
-                    className={`
-                      px-3 py-2 text-sm text-white
-                      hover:underline hover:decoration-green-500 hover:decoration-2
-                      transition duration-150 ease-in-out font-Poppins font-semibold
-                      ${
-                        activeNav === item.href
-                          ? "underline decoration-green-500 decoration-2"
-                          : ""
-                      }
-                    `}
-                    onClick={() => handleNavClick(item.href)}
-                  >
-                    {item.name}
-                  </NavLink>
-                  {item.subLinks && (
-                    <div className="absolute hidden group-hover:block bg-gray-800 shadow-lg p-2 mt-2 rounded">
-                      {renderSubLinks(item.subLinks)}
-                    </div>
-                  )}
-                </div>
-              ))}
-              <Link
-                to='#'
-                className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded ml-[5rem]"
-              >
-                Get License
-              </Link>
-            </div>
+        <div className="w-full hidden lg:flex lg:items-center justify-center ">
+          <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 ">
+            {navigation.map((item) => (
+              <div key={item.name} className="relative group">
+                <NavLink
+                  exact
+                  to={item.href}
+                  className={`
+                    px-3 py-2 text-sm text-white
+                    hover:underline hover:decoration-green-500 hover:decoration-2
+                    transition duration-150 ease-in-out font-Poppins font-semibold
+                    ${
+                      activeNav === item.href
+                        ? "underline decoration-green-500 decoration-2"
+                        : ""
+                    }
+                  `}
+                  onClick={() => handleNavClick(item.href)}
+                >
+                  {item.name}
+                </NavLink>
+                {item.subLinks && (
+                  <div className="absolute hidden group-hover:block bg-gray-800 shadow-lg p-2 mt-2 rounded">
+                    {renderSubLinks(item.subLinks)}
+                  </div>
+                )}
+              </div>
+            ))}
+            <Link
+              to='#'
+              className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded ml-[5rem]"
+            >
+              Get License
+            </Link>
+          </div>
+        </div>
+
+
+
         </div>
       </div>
 
