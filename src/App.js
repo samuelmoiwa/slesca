@@ -18,6 +18,7 @@ import RegulatoryCompliance from './pages/RegulatoryCompliance';
 import TrainingWorkshops from './pages/TrainingWorkshops';
 import Documents from './pages/Documents';
 import Policies from './pages/Policies';
+import Legals from './pages/Legals';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/services/training-workshops" element={<TrainingWorkshops />} />
           <Route path="/document" element={<Documents />} />
           <Route path="/document/policies" element={<Policies />} />
+          <Route path="/legal" element={<Legals />} />
         </Routes>
         <Footer/>
       </div>

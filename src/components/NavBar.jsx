@@ -35,7 +35,7 @@ const navigation = [
     ],
   },
   { name: "Public Notices", href: "/public-notices", current: false },
-  { name: "Legal", href: "#", current: false },
+  { name: "Legal", href: "/legal", current: false },
   { name: "Contact Us", href: "/contact-us", current: false },
 ];
 
