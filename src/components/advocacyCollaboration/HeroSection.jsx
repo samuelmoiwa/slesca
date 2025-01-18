@@ -13,7 +13,7 @@ const HeroSection = () => {
         <span className='text-lg text-white'> Home . Services . Advocacy And Collaboration</span>
       </p>
     </div>
-</BackgroundGradientAnimation>
+    </BackgroundGradientAnimation>
 
   )
 }

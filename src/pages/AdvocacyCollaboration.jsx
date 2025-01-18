@@ -1,5 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/advocacyCollaboration/HeroSection'
+import AdvocacyAndCollaboration from '../components/advocacyCollaboration/AdvocacyAndCollaboration'
+import RecentProjects from '../components/home/RecentProjects'
 
 const AdvocacyCollaboration = () => {
   return (
@@ -9,9 +11,10 @@ const AdvocacyCollaboration = () => {
       <div className=' w-full py-14 flex flex-col justify-center
         items-center mt-5 mb-10'
       >
-        
+        <AdvocacyAndCollaboration/>
       </div>
     </div>
+    <RecentProjects/>
   </>
   )
 }
