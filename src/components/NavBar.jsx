@@ -24,7 +24,7 @@ const navigation = [
       { name: "Seed License Procedures", href: "/about/license-procedures" },
       { name: "Renewal of Seed License", href: "/about/renewal-license" },
       { name: "Farmer Training and Capacity Building", href: "/farmer-training" },
-      { name: "Advocacy and Collaboration", href: "#" },
+      { name: "Advocacy and Collaboration", href: "/advocacy-collaboration" },
     ],
   },
   { name: "Projects", href: "/recent-projects", current: false },

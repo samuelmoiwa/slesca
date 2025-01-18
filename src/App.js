@@ -20,6 +20,7 @@ import Documents from './pages/Documents';
 import Policies from './pages/Policies';
 import Legals from './pages/Legals';
 import FarmerTraining from './pages/FarmerTraining';
+import AdvocacyCollaboration from './pages/AdvocacyCollaboration';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/document/policies" element={<Policies />} />
           <Route path="/legal" element={<Legals />} />
           <Route path="/farmer-training" element={<FarmerTraining />} />
+          <Route path="/advocacy-collaboration" element={<AdvocacyCollaboration />} />
         </Routes>
         <Footer/>
       </div>
