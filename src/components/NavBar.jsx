@@ -23,6 +23,8 @@ const navigation = [
       { name: "Training and Workshops", href: "/services/training-workshops" },
       { name: "Seed License Procedures", href: "/about/license-procedures" },
       { name: "Renewal of Seed License", href: "/about/renewal-license" },
+      { name: "Farmer Training and Capacity Building", href: "#" },
+      { name: "Advocacy and Collaboration", href: "#" },
     ],
   },
   { name: "Projects", href: "/recent-projects", current: false },
