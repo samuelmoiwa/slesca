@@ -12,7 +12,7 @@ const SeedsAct = () => {
         <SeedsActComponent/>
       </div>
     </div>
-  </>
+    </>
   )
 }
 
