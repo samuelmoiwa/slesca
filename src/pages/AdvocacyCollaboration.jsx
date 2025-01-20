@@ -15,7 +15,7 @@ const AdvocacyCollaboration = () => {
       </div>
     </div>
     <RecentProjects/>
-  </>
+    </>
   )
 }
 
