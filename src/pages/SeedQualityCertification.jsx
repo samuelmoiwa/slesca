@@ -13,7 +13,7 @@ const SeedQualityCertification = () => {
         <SeedQuality/>
       </div>
     </div>
-  </>
+    </>
   )
 }
 
