@@ -13,7 +13,7 @@ const TrainingWorkshops = () => {
         <TrainingAndWorkshopsComponent/>
       </div>
     </div>
-  </>
+    </>
   )
 }
 
