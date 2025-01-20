@@ -13,7 +13,7 @@ const SLeSCAStructure = () => {
         <SLeSCAStructureComponent/>
       </div>
     </div>
-  </>
+    </>
   )
 }
 
