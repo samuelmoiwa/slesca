@@ -21,7 +21,7 @@ function Footer() {
         <div className="w-full flex flex-col md:flex-row justify-center items-center mt-4">
 
           <div className="w-full md:mr-8">
-            <h4 className="text-gray-100 uppercase font-semibold">Contact Me</h4>
+            <h4 className="text-gray-100 uppercase font-semibold">Contact Us</h4>
             <p className="text-gray-200 mt-2">
               Sierra Leone Seed Certification Agency
               Tower Hill, Freetown, Sierra Leone
