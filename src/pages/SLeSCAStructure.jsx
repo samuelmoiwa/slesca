@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/about/SLeSCAStructure/HeroSection'
 import SLeSCAStructureComponent from '../components/about/SLeSCAStructure/SLeSCAStructureComponent'
+import Organogram from '../components/about/Organogram'
 
 const SLeSCAStructure = () => {
   return (
@@ -13,6 +14,7 @@ const SLeSCAStructure = () => {
           <SLeSCAStructureComponent/>
         </div>
       </div>
+      <Organogram/>
     </>
   )
 }

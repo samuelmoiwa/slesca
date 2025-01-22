@@ -55,7 +55,7 @@ const renderTree = (tree, level = 0) => {
 const Organogram = () => {
   return (
     <div className="w-full flex justify-center items-center bg-gray-50">
-        <div className="p-8 bg-gray-50 w-full max-w-[90rem]">
+      <div className="p-8 bg-gray-50 w-full max-w-[90rem] py-[5rem]">
         <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl font-extrabold text-green-800 text-center mb-8">
             Sierra Leone Seed Certification Agency (SLeSCA) Organogram
@@ -68,8 +68,9 @@ const Organogram = () => {
                 background: linear-gradient(135deg, #a7f3d0, #10b981);
             }
             }
-        `}</style>
-        </div>
+        `}
+        </style>
+      </div>
     </div>
 
   );
