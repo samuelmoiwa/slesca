@@ -28,7 +28,7 @@ export const Timeline = ({
       className="w-full   font-sans md:px-10"
       ref={containerRef}>
       <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black max-w-4xl text-center">
+        <h2 className="text-lg md:text-4xl mb-4 text-green-800 font-semibold  text-center">
           KEY ACHIEVEMENTS 2022/2023
         </h2>
         {/* <p className="text-neutral-700 text-sm md:text-base max-w-sm">
