@@ -1,33 +1,34 @@
 import React from "react";
 import Slider from "react-slick";
 import { FaQuoteLeft } from "react-icons/fa";
+import user from '../../image/user.png'
 
 const testimonials = [
   {
     name: "John Farmer",
     role: "Local Farmer",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user, // Replace with actual image
     quote:
       "Thanks to SLeSCA, I now have access to high-quality seeds that have significantly improved my crop yield and income.",
   },
   {
     name: "Jane Operator",
     role: "Seed Operator",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user, // Replace with actual image
     quote:
       "SLeSCA's licensing process ensures compliance and quality, making the seed industry more reliable and profitable.",
   },
   {
     name: "Michael Partner",
     role: "Agricultural Partner",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user, // Replace with actual image
     quote:
       "Partnering with SLeSCA has been instrumental in improving seed standards and fostering agricultural growth in Sierra Leone.",
   },
   {
     name: "Sarah Doe",
     role: "Community Leader",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user, // Replace with actual image
     quote:
       "The training provided by SLeSCA has empowered our community to grow better crops with sustainable farming methods.",
   },
