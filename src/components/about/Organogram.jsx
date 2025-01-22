@@ -5,68 +5,73 @@ const organogramData = {
     Board: {
       "Executive Director": {
         "Internal Audit": null,
-        "Secretariat": null,
-        Projects: ["Ext. Projects", "Training", "M&E", "Research"],
-        Technical: ["Register Data", "Field", "Laboratory"],
-        Administrative: [
-          "Finance",
-          "Procurement",
-          "Logistics",
-          "Drivers",
-          "ICT",
-          "Programs",
-          "Legal",
-          "Media/PRO",
-          "Business Unit",
-          "Secretary",
-          "Office Attendants",
-        ],
+        Secretariat: ["Legal", "Secretary", "Business Unit", "Media/PRO"],
+        Finance: null,
+        Programs: ["Training"],
+        Projects: ["M&E", "Research", "Ext. Projects"],
+        Technical: ["Laboratory", "Field", "Register Data"],
+        Administrative: ["ICT", "Logistics", "Procurement", "Drivers", "Office Attendants"],
       },
     },
   },
 };
 
-const renderLevel = (data, level = 0) => {
-  return Object.entries(data).map(([key, value], index) => (
+const renderBranch = (label, children, level) => (
+  <div className={`flex flex-col items-center gap-4`}>
     <div
-      key={index}
-      className={`border-l-4 pl-4 ml-4 mb-6 border-green-${300 + level * 100}`}
+      className={`rounded-lg px-6 py-3 shadow-lg bg-green-100 text-green-900 font-semibold ${
+        level === 0 ? "border-4 border-green-500" : "border border-green-300"
+      }`}
     >
-      <div className={`text-lg font-bold mb-2 text-green-${700 - level * 100}`}>
-        {key}
-      </div>
-      {value ? (
-        <div className="ml-4">
-          {Array.isArray(value)
-            ? value.map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-green-50 rounded-lg p-2 mb-2 shadow-sm"
-                >
-                  <span className="text-sm font-medium text-green-800">
-                    {item}
-                  </span>
-                </div>
-              ))
-            : renderLevel(value, level + 1)}
-        </div>
-      ) : null}
+      {label}
     </div>
-  ));
+    {children && (
+      <div
+        className={`flex flex-wrap justify-center gap-6 ${
+          level > 1 ? "mt-2" : "mt-4"
+        }`}
+      >
+        {Array.isArray(children)
+          ? children.map((child, i) => (
+              <div
+                key={i}
+                className="bg-green-50 text-green-700 border border-green-300 rounded-md px-4 py-2 text-sm shadow-sm"
+              >
+                {child}
+              </div>
+            ))
+          : renderTree(children, level + 1)}
+      </div>
+    )}
+  </div>
+);
+
+const renderTree = (tree, level = 0) => {
+  return Object.entries(tree).map(([key, value], index) =>
+    renderBranch(key, typeof value === "object" ? value : null, level)
+  );
 };
 
 const Organogram = () => {
   return (
-    <section className="bg-gray-50 py-12">
-      <div className="container mx-auto px-6 lg:px-16 max-w-7xl">
-        <h2 className="text-4xl font-extrabold text-green-800 text-center mb-12">
-          SLeSCA Organogram
-        </h2>
-        <div className="bg-white shadow-lg rounded-lg p-8">
-          {renderLevel(organogramData)}
+    <div className="w-full flex justify-center items-center bg-gray-50">
+        <div className="p-8 bg-gray-50 w-full max-w-[90rem]">
+        <div className="max-w-7xl mx-auto">
+            <h1 className="text-3xl font-extrabold text-green-800 text-center mb-8">
+            Sierra Leone Seed Certification Agency (SLeSCA) Organogram
+            </h1>
+            <div className="flex flex-col items-center">{renderTree(organogramData)}</div>
         </div>
-      </div>
-    </section>
+        <style jsx>{`
+            @layer utilities {
+            .bg-gradient-green {
+                background: linear-gradient(135deg, #a7f3d0, #10b981);
+            }
+            }
+        `}</style>
+        </div>
+    </div>
+
   );
 };
 
