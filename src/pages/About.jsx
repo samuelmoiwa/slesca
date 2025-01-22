@@ -10,6 +10,7 @@ import WhySLeSCAMatters from '../components/about/WhySLeSCAMatters'
 import LeadershipAndTeam from '../components/about/LeadershipAndTeam'
 import TestimonialsSection from '../components/about/TestimonialsSection'
 import Organogram from '../components/about/Organogram'
+import { TimelineSection } from '../components/about/Timeline'
 
 
 const About = () => {
@@ -31,6 +32,7 @@ const About = () => {
       <CallToAction/>
       <Organogram/>
       <WhySLeSCAMatters/>
+      <TimelineSection/>
       <LeadershipAndTeam/>
       <TestimonialsSection/>
     </>
