@@ -5,22 +5,66 @@ import "slick-carousel/slick/slick-theme.css";
 
 const directors = [
   {
-    name: "John Doe",
-    role: "Chairperson",
-    bio: "John brings 20+ years of leadership experience in agricultural policy and development.",
-    image: "https://via.placeholder.com/150",
+    name: "Mr. Idara Sheriff ",
+    role: "Board Chairman",
   },
   {
-    name: "Jane Smith",
-    role: "Director of Strategy",
-    bio: "Jane is an expert in sustainable development and has spearheaded numerous initiatives.",
-    image: "https://via.placeholder.com/150",
+    name: "Prof. Abdul Jalloh",
+    role: "CAO-MAF",
   },
   {
-    name: "Michael Johnson",
-    role: "Director of Finance",
-    bio: "Michael oversees financial strategy, ensuring accountability and growth.",
-    image: "https://via.placeholder.com/150",
+    name: "Dr. Chakanda",
+    role: "Exec. Dir. SLeSCA",
+  },
+  {
+    name: "Mr. John Kamara",
+    role: "Director of Crops ",
+  },
+  {
+    name: "Mr. Monya Farma",
+    role: "S.L Standards Bureau",
+  },
+  {
+    name: "Madam Yatta Samai",
+    role: "NaFFSL",
+  },
+  {
+    name: "Peter Massaquoi",
+    role: "NaFFSL",
+  },
+  {
+    name: "P. C Edward Sesay",
+    role: "NaFFSL",
+  },
+  {
+    name: "Mr. Brima Babo",
+    role: "NaFFSL",
+  },
+  {
+    name: "Madam Mariama Keita",
+    role: "NaFFSL",
+  },
+
+
+  {
+    name: "Mr. James S. Koroma",
+    role: "S.L Chamber",
+  },
+  {
+    name: "Mr. Mickail N. Turay",
+    role: "Ministry of Trade/Industry",
+  },
+  {
+    name: "Mr. Tasima Jah",
+    role: "Ministry of Finance",
+  },
+  {
+    name: "Dr. Osman Conteh",
+    role: "Director General",
+  },
+  {
+    name: "Dr. Melvin George",
+    role: "Njala University",
   },
 ];
 
@@ -60,18 +104,18 @@ const BoardOfDirectors = () => {
           {directors.map((director, index) => (
             <div
               key={index}
-              className="bg-gray-100 p-6 rounded-lg shadow-md text-center"
+              className="bg-white p-6 rounded-lg shadow-md text-center"
             >
-              <img
+              {/* <img
                 src={director.image}
                 alt={director.name}
                 className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
+              /> */}
               <h3 className="text-xl font-semibold text-gray-800">
                 {director.name}
               </h3>
               <p className="text-green-700 text-sm">{director.role}</p>
-              <p className="text-gray-600 mt-4 text-sm">{director.bio}</p>
+              {/* <p className="text-gray-600 mt-4 text-sm">{director.bio}</p> */}
             </div>
           ))}
         </Slider>
