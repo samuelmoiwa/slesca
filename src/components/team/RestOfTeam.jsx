@@ -1,41 +1,42 @@
 import React from "react";
+import user from '../../image/user.png'
 
 const teamMembers = [
   {
     name: "Daniel Roberts",
     role: "Seed Inspector",
     bio: "Daniel ensures compliance with seed quality standards by conducting field and warehouse inspections.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "Linda Carter",
     role: "Training Coordinator",
     bio: "Linda organizes workshops and training sessions for farmers and stakeholders.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "Samuel Green",
     role: "Quality Assurance Officer",
     bio: "Samuel oversees seed certification processes to meet national and international benchmarks.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "Victoria Johnson",
     role: "Administrative Assistant",
     bio: "Victoria provides crucial administrative support to ensure smooth operations.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "Ethan Brown",
     role: "Data Analyst",
     bio: "Ethan analyzes seed data trends to help improve operational efficiency and strategic planning.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "Sophia Adams",
     role: "Field Officer",
     bio: "Sophia works directly with farmers to ensure successful seed management practices.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
 ];
 
