@@ -3,39 +3,127 @@ import user from '../../image/user.png'
 
 const teamMembers = [
   {
-    name: "Daniel Roberts",
-    role: "Seed Inspector",
-    bio: "Daniel ensures compliance with seed quality standards by conducting field and warehouse inspections.",
+    name: "Christopher Woodie",
+    role: "Senior Field Technician",
     image: user,
   },
   {
-    name: "Linda Carter",
-    role: "Training Coordinator",
-    bio: "Linda organizes workshops and training sessions for farmers and stakeholders.",
+    name: "Thomas Tucker",
+    role: "Field Technician",
     image: user,
   },
   {
-    name: "Samuel Green",
-    role: "Quality Assurance Officer",
-    bio: "Samuel oversees seed certification processes to meet national and international benchmarks.",
+    name: "Abdul Deen Kamara",
+    role: "Seed Analist",
     image: user,
   },
   {
-    name: "Victoria Johnson",
-    role: "Administrative Assistant",
-    bio: "Victoria provides crucial administrative support to ensure smooth operations.",
+    name: "Nancy Moiforay",
+    role: "Seed Technician",
     image: user,
   },
   {
-    name: "Ethan Brown",
-    role: "Data Analyst",
-    bio: "Ethan analyzes seed data trends to help improve operational efficiency and strategic planning.",
+    name: "Hawa Korfuma",
+    role: "Seed Technician",
     image: user,
   },
   {
-    name: "Sophia Adams",
-    role: "Field Officer",
-    bio: "Sophia works directly with farmers to ensure successful seed management practices.",
+    name: "Ngegba Kamara",
+    role: "Laboratory Attendant",
+    image: user,
+  },
+  {
+    name: "Yabome Efua Ajai Kamara",
+    role: "Laboratry Assistnt",
+    image: user,
+  },
+  {
+    name: "N'ganga MB Bockarie",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Nanah Kargbo",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Mohamed Williams",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Momodu Dumere",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Moriba Musa Koroma",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Abu Bakarr Kamara",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Alpha Kamara",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Sahr Gbetuwa",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Abraham Konda Sesay",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Sorie Kamara Conteh",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Alfred Kamara",
+    role: "Field Inspector",
+    image: user,
+  },
+
+
+
+
+  {
+    name: "Yayah Daramy",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Abu Bakarr Gibril",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Hassan Kamara (Kassiri)",
+    role: "Field Inspector",
+    image: user,
+  },
+  {
+    name: "Umaru K. Kamara",
+    role: "Intern",
+    image: user,
+  },
+  {
+    name: "Esther C. Turay",
+    role: "Intern",
+    image: user,
+  },
+  {
+    name: "Issa l. Koroma",
+    role: "Intern",
     image: user,
   },
 ];
@@ -46,7 +134,7 @@ const RestOfTeam = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-green-800">Rest of the Team</h2>
+          <h2 className="text-3xl font-bold text-green-800">FIELD AND LABORATORIES</h2>
           <p className="text-gray-600 mt-4 text-lg">
             Meet the dedicated professionals who work behind the scenes to support SLeSCA's mission of improving agriculture in Sierra Leone.
           </p>
@@ -68,7 +156,6 @@ const RestOfTeam = () => {
                 {member.name}
               </h3>
               <p className="text-green-700 text-sm">{member.role}</p>
-              <p className="text-gray-600 mt-4 text-sm">{member.bio}</p>
             </div>
           ))}
         </div>
