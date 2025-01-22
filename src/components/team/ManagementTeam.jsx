@@ -2,25 +2,26 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import user from '../../image/user.png'
 
 const managementTeam = [
   {
     name: "Alice Green",
     role: "Operations Manager",
     bio: "Alice ensures smooth implementation of programs and stakeholder engagement.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "James Brown",
     role: "Program Coordinator",
     bio: "James leads training programs and capacity-building initiatives for farmers.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
   {
     name: "Sarah White",
     role: "Quality Assurance Specialist",
     bio: "Sarah oversees seed quality testing and certification processes.",
-    image: "https://via.placeholder.com/150",
+    image: user,
   },
 ];
 
