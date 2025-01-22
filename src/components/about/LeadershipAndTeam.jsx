@@ -54,7 +54,7 @@ const LeadershipAndTeam = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-[13rem] object-cover bg-red-500"
+                className="w-full h-[13rem] object-cover"
               />
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold text-gray-800">
