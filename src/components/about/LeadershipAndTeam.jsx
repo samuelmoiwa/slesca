@@ -1,26 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
+import user from '../../image/user_2.jpg'
 
 const teamMembers = [
   {
     name: "John Doe",
     role: "Director of Operations",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user , // Replace with actual image
   },
   {
     name: "Jane Smith",
     role: "Head of Quality Assurance",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user , // Replace with actual image
   },
   {
     name: "Michael Brown",
     role: "Lead Agronomist",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user , // Replace with actual image
   },
   {
     name: "Emily Davis",
     role: "Seed Certification Officer",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: user , // Replace with actual image
   },
 ];
 
@@ -53,7 +54,7 @@ const LeadershipAndTeam = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-[13rem] object-cover bg-red-500"
               />
               <div className="p-4 text-center">
                 <h3 className="text-lg font-semibold text-gray-800">
