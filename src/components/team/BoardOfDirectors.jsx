@@ -106,16 +106,10 @@ const BoardOfDirectors = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md text-center"
             >
-              {/* <img
-                src={director.image}
-                alt={director.name}
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              /> */}
               <h3 className="text-xl font-semibold text-gray-800">
                 {director.name}
               </h3>
               <p className="text-green-700 text-sm">{director.role}</p>
-              {/* <p className="text-gray-600 mt-4 text-sm">{director.bio}</p> */}
             </div>
           ))}
         </Slider>
