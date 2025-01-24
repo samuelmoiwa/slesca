@@ -4,23 +4,23 @@ import user from '../../image/user_2.jpg'
 
 const teamMembers = [
   {
-    name: "John Doe",
-    role: "Director of Operations",
+    name: "Mr. Idara Sherriff",
+    role: "Board Chairman",
     image: user , // Replace with actual image
   },
   {
-    name: "Jane Smith",
-    role: "Head of Quality Assurance",
+    name: "Dr. Robert Chakanda",
+    role: "Exec. Dir. SLeSCA",
     image: user , // Replace with actual image
   },
   {
-    name: "Michael Brown",
-    role: "Lead Agronomist",
+    name: "Mr. John Kamara",
+    role: "Director of Crops-MAF",
     image: user , // Replace with actual image
   },
   {
-    name: "Emily Davis",
-    role: "Seed Certification Officer",
+    name: "Dr. Osman Conteh",
+    role: "Director General SLARI",
     image: user , // Replace with actual image
   },
 ];
