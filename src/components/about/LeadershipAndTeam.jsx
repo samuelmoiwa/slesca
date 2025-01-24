@@ -4,13 +4,13 @@ import user from '../../image/user_2.jpg'
 
 const teamMembers = [
   {
-    name: "Mr. Idara Sherriff",
-    role: "Board Chairman",
+    name: "Dr. Robert Chakanda",
+    role: "Exec. Dir. SLeSCA",
     image: user , // Replace with actual image
   },
   {
-    name: "Dr. Robert Chakanda",
-    role: "Exec. Dir. SLeSCA",
+    name: "Mr. Idara Sherriff",
+    role: "Board Chairman",
     image: user , // Replace with actual image
   },
   {
