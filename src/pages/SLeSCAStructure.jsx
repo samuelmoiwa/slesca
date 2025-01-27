@@ -2,7 +2,7 @@ import React from 'react'
 import HeroSection from '../components/about/SLeSCAStructure/HeroSection'
 import SLeSCAStructureComponent from '../components/about/SLeSCAStructure/SLeSCAStructureComponent'
 import Organogram from '../components/about/Organogram'
-
+import SeedIndustry from '../components/about/SLeSCAStructure/SeedIndustry'
 const SLeSCAStructure = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const SLeSCAStructure = () => {
         </div>
       </div>
       <Organogram/>
+      <SeedIndustry/>
     </>
   )
 }
