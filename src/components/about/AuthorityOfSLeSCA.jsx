@@ -11,7 +11,8 @@ const AuthorityOfSLeSCA = () => {
             Authority of the Agency
           </h2>
           <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
-            As the leading authority for seed quality regulation, SLeSCA is entrusted with a pivotal role in Sierra Leone’s agricultural sector. Here’s how we operate.
+            As the leading authority for seed quality regulation, SLeSCA is entrusted with a pivotal role in
+            Sierra Leone’s agricultural sector. Here’s how we operate.
           </p>
         </div>
 
