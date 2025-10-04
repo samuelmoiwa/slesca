@@ -220,7 +220,8 @@ const DocumentComponent = () => {
               {docs.map((doc) => (
                 <div
                   key={doc.id}
-                  className="bg-white shadow-lg p-6 rounded-lg border border-gray-200 hover:shadow-2xl transition transform hover:-translate-y-1"
+                  className="bg-white shadow-lg p-6 rounded-lg border border-gray-200 hover:shadow-2xl
+                  transition transform hover:-translate-y-1"
                 >
                   <div className="flex items-center mb-4">
                     <FaFilePdf className="text-red-600 text-4xl mr-4" />
