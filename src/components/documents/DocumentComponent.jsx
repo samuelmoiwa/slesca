@@ -212,7 +212,8 @@ const DocumentComponent = () => {
         {Object.entries(categorizedDocuments).map(([category, docs]) => (
           <div key={category} className="mb-12">
             {/* Category Header */}
-            <h3 className="text-2xl font-bold text-white bg-green-700 py-3 px-6 rounded-lg shadow-md inline-block mb-6">
+            <h3 className="text-2xl font-bold text-white bg-green-700 py-3 px-6 rounded-lg
+            shadow-md inline-block mb-6">
               {category}
             </h3>
 
@@ -243,13 +244,15 @@ const DocumentComponent = () => {
                       </button>
                       <button
                         onClick={() => handlePrintDocument(doc.link)}
-                        className="px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 flex items-center gap-2 transition"
+                        className="px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700
+                        flex items-center gap-2 transition"
                       >
                         <FaPrint /> Print
                       </button>
                       <button
                         onClick={() => handleShareDocument(doc.title, doc.link)}
-                        className="px-4 py-2 bg-purple-600 text-white text-sm rounded-md hover:bg-purple-700 flex items-center gap-2 transition"
+                        className="px-4 py-2 bg-purple-600 text-white text-sm rounded-md hover:bg-purple-700
+                        flex items-center gap-2 transition"
                       >
                         <FaShare /> Share
                       </button>
