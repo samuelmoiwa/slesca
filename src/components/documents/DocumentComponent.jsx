@@ -236,7 +236,8 @@ const DocumentComponent = () => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleViewDocument(doc.link)}
-                        className="px-4 py-2 bg-green-700 text-white text-sm rounded-md hover:bg-green-800 flex items-center gap-2 transition"
+                        className="px-4 py-2 bg-green-700 text-white text-sm rounded-md hover:bg-green-800
+                        flex items-center gap-2 transition"
                       >
                         <FaDownload /> View
                       </button>
