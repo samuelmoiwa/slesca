@@ -36,11 +36,6 @@ const managementTeam = [
     image: user,
   },
   {
-    name: "Mohamed Alie Kallon",
-    role: "Legal Preactitioner",
-    image: user,
-  },
-  {
     name: "Mustapha David Jah",
     role: "Acting Accountant",
     image: user,
@@ -86,17 +81,17 @@ const managementTeam = [
     image: user,
   },
   {
-    name: "Mrs. Gbakiwa",
+    name: "Mrs. Kadiatu Kpakiwa",
     role: "Laboratory Technician",
     image: user,
   },
   {
-    name: "Josephine",
+    name: "Josephine Koroma",
     role: "Confidential Technician",
     image: user,
   },
   {
-    name: "Millicet",
+    name: "Millicent Swarray",
     role: "Data Officer",
     image: user,
   },
@@ -121,25 +116,58 @@ const managementTeam = [
     image: user,
   },
   {
-    name: "Nansu Karimu Sannohn",
+    name: "Nansu Karim Sannoh",
     role: "Intern",
     image: user,
   },
   {
-    name: "Edith",
-    role: "Intern",
-    image: user,
-  },
-  {
-    name: "Idara son",
+    name: "Soufian Sherrif",
     role: "Intern",
     image: user,
   },
 ];
 
+// --- Custom Arrow Components with Beautiful UI ---
+
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} absolute top-1/2 -translate-y-1/2 -right-6 lg:-right-12 xl:-right-16 z-10 cursor-pointer hidden md:block`}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <div className="bg-green-700/90 hover:bg-green-600 w-12 h-12 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+const PrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} absolute top-1/2 -translate-y-1/2 -left-6 lg:-left-12 xl:-left-16 z-10 cursor-pointer hidden md:block`}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <div className="bg-green-700/90 hover:bg-green-600 w-12 h-12 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+// --- Main Component ---
+
 const ManagementTeam = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -148,6 +176,8 @@ const ManagementTeam = () => {
     autoplaySpeed: 3000,
     rtl: true,
     cssEase: "linear",
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -159,6 +189,7 @@ const ManagementTeam = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          arrows: false, // Hide arrows on smaller screens, dots are usually better
         },
       },
     ],
@@ -167,7 +198,7 @@ const ManagementTeam = () => {
   return (
     <section className="w-full flex justify-center items-center">
       <div className="py-12 bg-gray-50 w-full max-w-[90rem]">
-         <div className="container mx-auto px-6 lg:px-16 max-w-7xl">
+         <div className="container mx-auto px-6 lg:px-16 max-w-7xl relative">
         <h2 className="text-3xl font-bold text-green-800 text-center mb-8">
           Head Office
         </h2>
@@ -175,24 +206,24 @@ const ManagementTeam = () => {
           {managementTeam.map((member, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md text-center"
+              className="px-2 py-4" // Added vertical padding too for better spacing
             >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-24 h-24 mx-auto rounded-full mb-4"
-              />
-              <h3 className="text-xl font-semibold text-gray-800">
-                {member.name}
-              </h3>
-              <p className="text-green-700 text-sm">{member.role}</p>
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center h-full flex flex-col items-center justify-center">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-28 h-28 mx-auto rounded-full mb-4 object-cover border-4 border-green-200" // Slightly larger image with border
+                />
+                <h3 className="text-xl font-semibold text-gray-800 mt-2">
+                  {member.name}
+                </h3>
+                <p className="text-green-700 text-base">{member.role}</p>
+              </div>
             </div>
           ))}
         </Slider>
       </div>
       </div>
-
-
     </section>
   );
 };
