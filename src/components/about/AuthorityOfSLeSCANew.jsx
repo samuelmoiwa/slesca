@@ -64,7 +64,7 @@ const AuthorityOfSLeSCA = () => {
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50">
+    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50 w-full">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute top-0 left-0 w-full h-full">
