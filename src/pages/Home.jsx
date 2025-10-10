@@ -9,9 +9,13 @@ import KeyFunctionsNew from "../components/home/KeyFunctionsNew";
 import StatisticsImpact from "../components/home/StatisticsImpact";
 import StatisticsImpactNew from "../components/home/StatisticsImpactNew";
 import RecentProjects from "../components/home/RecentProjects";
+import RecentProjectsNew from "../components/home/RecentProjectsNew";
 import GetInvolved from "../components/home/GetInvolved";
+import GetInvolvedNew from "../components/home/GetInvolvedNew";
 import Testimonials from "../components/home/Testimonials";
+import TestimonialsNew from "../components/home/TestimonialsNew";
 import CallToAction from "../components/home/CallToAction";
+import CallToActionNew from "../components/home/CallToActionNew";
 import Banner from "../components/home/Banner";
 import BannerNew from "../components/home/BannerNew";
 
@@ -36,7 +40,8 @@ const Home = () => {
       </div>
 
       <>
-        <GetInvolved />
+        {/* <GetInvolved /> */}
+        <GetInvolvedNew />
       </>
 
       <>
@@ -47,11 +52,13 @@ const Home = () => {
       {/* <StatisticsImpact /> */}
       <StatisticsImpactNew />
 
-      <RecentProjects />
+      {/* <RecentProjects /> */}
+      <RecentProjectsNew />
 
-      <CallToAction />
-
-      <Testimonials />
+      {/* <CallToAction /> */}
+      <CallToActionNew />
+      {/* <Testimonials /> */}
+      <TestimonialsNew />
     </>
   );
 };
