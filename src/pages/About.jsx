@@ -31,7 +31,7 @@ const About = () => {
       <CallToAction/>
       <WhySLeSCAMatters/>
       <TimelineSection/>
-      <LeadershipAndTeam/>
+      {/* <LeadershipAndTeam/> */}
       <TestimonialsSection/>
     </>
   )

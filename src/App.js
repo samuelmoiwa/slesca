@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import FooterNew from './components/FooterNew';
 import About from './pages/About';
 import Services from './pages/Services';
 import OurTeam from './pages/OurTeam';
@@ -49,7 +50,8 @@ function App() {
           <Route path="/farmer-training" element={<FarmerTraining />} />
           <Route path="/advocacy-collaboration" element={<AdvocacyCollaboration />} />
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
+        <FooterNew/>
       </div>
     </div>
 
