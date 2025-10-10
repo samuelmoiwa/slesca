@@ -15,6 +15,7 @@ import {
   Sparkles,
   ChevronUp,
 } from "lucide-react";
+import logo from '../asset/logo.jpg'
 
 // Note: Replace these with your actual React Router Link component
 const Link = ({ to, children, className }) => (
@@ -107,10 +108,8 @@ function Footer() {
             <div className="text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full blur-xl opacity-50 animate-pulse" />
-                  <div className="relative w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-2xl">
-                    <Sparkles className="w-10 h-10 text-white" />
-                  </div>
+                  <img src={logo} alt="SLeSCA Logo" className="w-20 h-20 rounded-full object-cover border-4 border-white/20 shadow-lg" />
+                  <div className="absolute inset-0 rounded-full border-2 border-white/30" />
                 </div>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-green-100 to-emerald-200 bg-clip-text text-transparent">
