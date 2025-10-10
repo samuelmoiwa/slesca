@@ -25,8 +25,8 @@ const Home = () => {
         {/* <Banner /> */}
         <BannerNew />
         <div
-          className=" w-full py-14 flex flex-col justify-center
-          items-center mt-5 mb-10"
+          className=" w-full  flex flex-col justify-center
+          items-center "
         >
           {/* <MissionVision /> */}
           <MissionVisionNew />
