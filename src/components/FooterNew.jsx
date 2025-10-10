@@ -324,7 +324,7 @@ function Footer() {
               Agency (SLeSCA). All rights reserved.
             </p>
 
-            <div className="flex items-center gap-6">
+            {/* <div className="flex items-center gap-6">
               <Link
                 to="/privacy-policy"
                 className="text-gray-400 hover:text-green-400 text-sm transition-colors duration-300"
@@ -343,7 +343,7 @@ function Footer() {
               >
                 Sitemap
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

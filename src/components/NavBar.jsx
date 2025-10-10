@@ -336,7 +336,9 @@ function NavBar() {
 
   // Desktop submenu component
   const DesktopSubmenu = ({ subLinks }) => (
-    <div className="absolute left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform group-hover:translate-y-0 translate-y-2 z-50 pointer-events-none group-hover:pointer-events-auto">
+    <div className="absolute left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible
+    transition-all duration-300 ease-in-out transform group-hover:translate-y-0 translate-y-2 z-50 pointer-events-none
+    group-hover:pointer-events-auto">
       <div className="bg-white rounded-lg shadow-2xl overflow-hidden border border-gray-100">
         <div className="py-2">
           {subLinks.map((subItem, idx) => (
@@ -427,7 +429,7 @@ function NavBar() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center justify-center flex-1 px-8">
+            <div className="hidden 2xl:flex items-center justify-center flex-1 px-8">
               <div className="flex items-center space-x-2 xl:space-x-4">
                 {navigation.map((item) => (
                   <div key={item.name} className="relative group">
@@ -463,7 +465,7 @@ function NavBar() {
             </div>
 
             {/* Get License Button - Desktop */}
-            <div className="hidden lg:flex items-center space-x-4 flex-shrink-0">
+            <div className="hidden 2xl:flex items-center space-x-4 flex-shrink-0">
               <a
                 href="/about/license-procedures"
                 className="flex items-center space-x-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap"
@@ -480,7 +482,7 @@ function NavBar() {
             <button
               onClick={toggleMenu}
               type="button"
-              className="lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-green-100 hover:text-white hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-all duration-200"
+              className="2xl:hidden inline-flex items-center justify-center p-2 rounded-lg text-green-100 hover:text-white hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-all duration-200"
               aria-expanded={isOpen}
               aria-label="Toggle navigation menu"
             >
@@ -491,7 +493,7 @@ function NavBar() {
 
         {/* Mobile Navigation */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`2xl:hidden overflow-hidden transition-all duration-300 ease-in-out ${
             isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
         >
