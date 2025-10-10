@@ -51,3 +51,7 @@ const About = () => {
 };
 
 export default About;
+
+
+// made changes to hero section, added a common hero section to be used in different pages with dynamic props
+// Chinedumeke@32703
