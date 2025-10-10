@@ -12,7 +12,6 @@ import img_1 from '../../image/2.jpg'
 
 import { Link } from 'react-router-dom';
 
-
 const teamMembers = [
   {
     image: img_1,
@@ -50,7 +49,6 @@ const Banner = () => {
   const knowMore = () =>{
     '#'
   }
-
 
   return (
     <>

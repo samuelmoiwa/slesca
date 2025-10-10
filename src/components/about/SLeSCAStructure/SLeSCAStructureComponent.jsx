@@ -1,5 +1,11 @@
 import React from "react";
-import { FaUsers, FaCogs, FaSeedling, FaClipboardCheck, FaHandsHelping } from "react-icons/fa";
+import {
+  FaUsers,
+  FaCogs,
+  FaSeedling,
+  FaClipboardCheck,
+  FaHandsHelping,
+} from "react-icons/fa";
 
 const structureData = [
   {
@@ -43,10 +49,13 @@ const SLeSCAStructureComponent = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-green-800">SLeSCA Structure</h2>
+          <h2 className="text-5xl font-bold text-green-800">
+            SLeSCA Structure
+          </h2>
           <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-            Dive into the hierarchical framework of SLeSCA and learn about the dedicated teams and departments
-            driving innovation and excellence in Sierra Leone's agricultural sector.
+            Dive into the hierarchical framework of SLeSCA and learn about the
+            dedicated teams and departments driving innovation and excellence in
+            Sierra Leone's agricultural sector.
           </p>
         </div>
 
@@ -58,17 +67,23 @@ const SLeSCAStructureComponent = () => {
               className="bg-white shadow-lg rounded-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               {/* Icon */}
-              <div className="flex justify-center items-center">{section.icon}</div>
+              <div className="flex justify-center items-center">
+                {section.icon}
+              </div>
               {/* Title */}
-              <h3 className="text-xl font-bold text-green-800 text-center mt-6">{section.title}</h3>
+              <h3 className="text-xl font-bold text-green-800 text-center mt-6">
+                {section.title}
+              </h3>
               {/* Description */}
-              <p className="text-gray-600 text-center mt-4">{section.description}</p>
+              <p className="text-gray-600 text-center mt-4">
+                {section.description}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Hierarchical Flow */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <h3 className="text-3xl font-bold text-green-800 text-center mb-8">Organizational Hierarchy</h3>
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 bg-green-800 h-full w-1 rounded"></div>
@@ -93,7 +108,7 @@ const SLeSCAStructureComponent = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
