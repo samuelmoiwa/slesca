@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../components/about/HeroSection";
+import HeroSection from "../components/common/HeroSection";
 import MissionVision from "../components/about/MissionVision";
 import MissionVisionNew from "../components/home/MissionVisionNew";
 import AboutUsSection from "../components/about/AboutUsSection";
@@ -23,7 +23,7 @@ const About = () => {
   return (
     <>
       <div className="bg-gradient-to-b from-blue-50 to-green-200 w-full h-full flex justify-center items-center flex-col">
-        <HeroSection />
+        <HeroSection title="About SLeSCA" />
         <div
           className="w-full  flex flex-col justify-center
           items-center"
@@ -46,8 +46,6 @@ const About = () => {
       {/* <TimelineSection /> */}
       <TimelineNew />
       <CallToActionNew />
-      {/* <TestimonialsSection /> */}
-      <Testimonials />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../components/about/SLeSCAStructure/HeroSection";
+import HeroSection from "../components/common/HeroSection";
 import SLeSCAStructureComponent from "../components/about/SLeSCAStructure/SLeSCAStructureComponent";
 import Organogram from "../components/about/Organogram";
 import SeedIndustry from "../components/about/SLeSCAStructure/SeedIndustry";
@@ -7,7 +7,7 @@ const SLeSCAStructure = () => {
   return (
     <>
       <div className="bg-gradient-to-b from-blue-50 to-green-200 w-full h-full flex justify-center items-center flex-col">
-        <HeroSection />
+        <HeroSection title="SLeSCA Structure" />
         <Organogram />
         <div
           className=" w-full py-14 flex flex-col justify-center

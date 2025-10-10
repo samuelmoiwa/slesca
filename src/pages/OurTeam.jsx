@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../components/team/HeroSection";
+import HeroSection from "../components/common/HeroSection";
 import BoardOfDirectors from "../components/team/BoardOfDirectors";
 import user from "../image/user.png";
 import mansaray from "../image/team/mansaray.jpeg";
@@ -363,7 +363,7 @@ const OurTeam = () => {
   return (
     <>
       <div className="bg-gradient-to-b from-blue-50 to-green-200 w-full h-full flex justify-center items-center flex-col">
-        <HeroSection />
+        <HeroSection title="Our Team" breadcrumb="Home . Team" />
         <div
           className=" w-full py-10 flex flex-col justify-center
           items-center mt-5 mb-5"
