@@ -140,7 +140,7 @@ function Footer() {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 sm:flex-row flex-col">
                 <input
                   type="email"
                   value={email}
