@@ -64,7 +64,7 @@ const SLeSCAStructureComponent = () => {
           {structureData.map((section, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="bg-white shadow rounded-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               {/* Icon */}
               <div className="flex justify-center items-center">

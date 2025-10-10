@@ -308,7 +308,8 @@ const Organogram = () => {
 
             <button
               onClick={() => setShowStats(!showStats)}
-              className="px-6 py-3 bg-white border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="px-6 py-3 bg-white border-2 border-green-600 text-green-600 hover:bg-green-600
+              hover:text-white font-semibold rounded-lg shadow hover:shadow-xl transition-all duration-300"
             >
               {showStats ? "Hide" : "Show"} Statistics
             </button>
@@ -316,7 +317,7 @@ const Organogram = () => {
 
           {/* Statistics Panel */}
           {showStats && (
-            <div className="bg-white rounded-xl shadow-xl p-6 mb-8 border-2 border-green-200">
+            <div className="bg-white rounded-xl shadow-md p-6 mb-8 border-2 border-green-200">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                 <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg">
                   <div className="text-3xl font-bold text-green-700 mb-1">
@@ -346,7 +347,7 @@ const Organogram = () => {
         </div>
 
         {/* Organogram Chart */}
-        <div className="bg-white rounded-2xl shadow-2xl p-10 border-2 border-green-200">
+        <div className="bg-white rounded-2xl shadow-lg p-10 border-2 border-green-200">
           <div className="flex flex-col items-center overflow-x-auto">
             <div className="">
               {renderTree(organogramData, 0, globalExpand)}
@@ -355,7 +356,7 @@ const Organogram = () => {
         </div>
 
         {/* Legend */}
-        <div className="max-w-4xl mx-auto mt-8 bg-white rounded-xl shadow-lg p-6 border-2 border-green-200">
+        <div className="max-w-4xl mx-auto mt-8 bg-white rounded-md shadow-lg p-6 border-2 border-green-200">
           <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">
             Legend
           </h3>
