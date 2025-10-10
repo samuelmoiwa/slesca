@@ -112,7 +112,8 @@ function Footer() {
                   <div className="absolute inset-0 rounded-full border-2 border-white/30" />
                 </div>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-green-100 to-emerald-200 bg-clip-text text-transparent">
+                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-green-100
+                  to-emerald-200 bg-clip-text text-start text-transparent">
                     SLeSCA
                   </h2>
                   <p className="text-green-300 text-sm font-semibold tracking-wider">
