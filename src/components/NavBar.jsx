@@ -241,6 +241,10 @@ const navigation = [
         name: "Seed Quality Certification",
         href: "/services/quality-certification",
       },
+      {
+        name: "Licenses Renewal",
+        href: "/services/renewal-license",
+      },
     ],
   },
   { name: "Projects", href: "/recent-projects", current: false },
@@ -289,18 +293,18 @@ function NavBar() {
     setOpenSubmenu(openSubmenu === itemName ? null : itemName);
   };
 
-    const handleNavClick = (href) => {
-      localStorage.setItem("currentNav", href);
-      setActiveNav(href);
-      setIsOpen(false);
-    };
+  const handleNavClick = (href) => {
+    localStorage.setItem("currentNav", href);
+    setActiveNav(href);
+    setIsOpen(false);
+  };
 
-    useEffect(() => {
-      const savedNav = localStorage.getItem("currentNav");
-      const currentPath = location.pathname;
-      setActiveNav(savedNav && savedNav === currentPath ? savedNav : currentPath);
-      AOS.refresh();
-    }, [location]);
+  useEffect(() => {
+    const savedNav = localStorage.getItem("currentNav");
+    const currentPath = location.pathname;
+    setActiveNav(savedNav && savedNav === currentPath ? savedNav : currentPath);
+    AOS.refresh();
+  }, [location]);
 
   // Handle scroll effect
   useEffect(() => {
@@ -336,9 +340,11 @@ function NavBar() {
 
   // Desktop submenu component
   const DesktopSubmenu = ({ subLinks }) => (
-    <div className="absolute left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible
+    <div
+      className="absolute left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible
     transition-all duration-300 ease-in-out transform group-hover:translate-y-0 translate-y-2 z-50 pointer-events-none
-    group-hover:pointer-events-auto">
+    group-hover:pointer-events-auto"
+    >
       <div className="bg-white rounded-lg shadow-2xl overflow-hidden border border-gray-100">
         <div className="py-2">
           {subLinks.map((subItem, idx) => (
@@ -467,7 +473,7 @@ function NavBar() {
             {/* Get License Button - Desktop */}
             <div className="hidden 2xl:flex items-center space-x-4 flex-shrink-0">
               <a
-                href="/about/license-procedures"
+                href="/license-procedures"
                 className="flex items-center space-x-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap"
                 onClick={(e) =>
                   handleNavClick("/about/license-procedures", false, e)

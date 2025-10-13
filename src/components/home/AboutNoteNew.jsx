@@ -10,6 +10,7 @@ import {
   FileCheck,
   Leaf,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutNote = () => {
   const [hoveredFeature, setHoveredFeature] = useState(null);
@@ -118,20 +119,26 @@ const AboutNote = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl font-bold text-white shadow-lg shadow-green-500/30 hover:shadow-xl hover:shadow-green-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden">
+              <Link
+                to={"/about"}
+                className="group relative px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl font-bold text-white shadow-lg shadow-green-500/30 hover:shadow-xl hover:shadow-green-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+              >
                 <span className="relative z-10 flex items-center justify-center space-x-2">
                   <span>Learn More About Us</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-green-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </Link>
 
-              <button className="group px-8 py-4 bg-white border-2 border-green-600 rounded-xl font-bold text-green-600 hover:bg-green-50 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
+              <Link
+                to={"/license-procedures"}
+                className="group px-8 py-4 bg-white border-2 border-green-600 rounded-xl font-bold text-green-600 hover:bg-green-50 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+              >
                 <span className="flex items-center justify-center space-x-2">
                   <Leaf className="w-5 h-5" />
                   <span>Get Certified</span>
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
 

@@ -29,7 +29,7 @@ const About = () => {
           items-center"
         >
           {/* <MissionVision /> */}
-          <MissionVisionNew />
+          {/* <MissionVisionNew /> */}
           {/* <AboutUsSection/> */}
           <AboutUsSectionNew />
           {/* <AuthorityOfSLeSCA /> */}
@@ -37,7 +37,7 @@ const About = () => {
         </div>
       </div>
 
-      <KeyFunctions />
+      {/* <KeyFunctions /> */}
       {/* <AchievementsAndImpact /> */}
       <AchievementsAndImpactNew />
       {/* <CallToAction /> */}

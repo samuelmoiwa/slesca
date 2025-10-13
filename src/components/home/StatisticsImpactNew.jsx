@@ -47,7 +47,11 @@ const StatisticsImpact = () => {
   });
 
   return (
-    <section ref={ref} className="relative bg-slate-50 py-20 sm:py-24 lg:py-32">
+    <section
+      ref={ref}
+      className="relative bg-slate-50 py-20 sm:py-24 lg:py-32"
+      id="statistics-impact"
+    >
       {/* --- UI: Thematic background image with a dark overlay for readability --- */}
       <div className="absolute inset-0">
         <img
@@ -88,9 +92,7 @@ const StatisticsImpact = () => {
                   </>
                 )}
               </div>
-              <h3 className="mt-4 text-lg font-semibold ">
-                {stat.title}
-              </h3>
+              <h3 className="mt-4 text-lg font-semibold ">{stat.title}</h3>
               <p className="mt-2 text-sm ">{stat.description}</p>
               {/* --- UI: A subtle interactive element that appears on hover --- */}
               <div className="absolute top-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">

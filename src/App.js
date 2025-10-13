@@ -38,8 +38,8 @@ function App() {
           <Route path="/faqs" element={<FAQ />} />
           <Route path="/about/structure" element={<SLeSCAStructure />} />
           <Route path="/document/seeds-act" element={<SeedsAct />} />
-          <Route path="/about/license-procedures" element={<SeedLicenseProcedures />} />
-          <Route path="/about/renewal-license" element={<RenewalOfSeedLicense />} />
+          <Route path="/license-procedures" element={<SeedLicenseProcedures />} />
+          <Route path="/services/renewal-license" element={<RenewalOfSeedLicense />} />
           <Route path="/recent-projects" element={<RecentProjects />} />
           <Route path="/services/quality-certification" element={<SeedQualityCertification />} />
           <Route path="/services/regulatory-compliance" element={<RegulatoryCompliance />} />

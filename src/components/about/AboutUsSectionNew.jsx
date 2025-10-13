@@ -7,6 +7,7 @@ import {
   CheckCircle,
   Globe,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutUsSection = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -214,8 +215,11 @@ const AboutUsSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-20 text-center">
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all cursor-pointer group">
+        {/* <div className="mt-20 text-center">
+          <Link
+            to={"#statistics-impact"}
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all cursor-pointer group"
+          >
             <span className="font-semibold">Learn More About Our Impact</span>
             <svg
               className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
@@ -230,8 +234,8 @@ const AboutUsSection = () => {
                 d="M13 7l5 5m0 0l-5 5m5-5H6"
               />
             </svg>
-          </div>
-        </div>
+          </Link>
+        </div> */}
       </div>
     </section>
   );

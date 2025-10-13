@@ -128,7 +128,6 @@
 
 // export default MissionVision;
 
-
 import React, { useState, useEffect } from "react";
 import {
   Target,
@@ -140,6 +139,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Sample images - replace with your actual images
 const images = [
@@ -500,9 +500,12 @@ const MissionVision = () => {
                   Be part of the transformation. Together, we're building a
                   sustainable future for Sierra Leone's agriculture.
                 </p>
-                <button className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <Link
+                  to={"/about"}
+                  className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
                   Learn More About Our Work
-                </button>
+                </Link>
               </div>
             </div>
           </div>

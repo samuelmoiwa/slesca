@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   ChevronRight,
@@ -8,6 +7,7 @@ import {
   Target,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Sample images - replace with your actual images
 const bannerImages = [
@@ -172,20 +172,26 @@ const Banner = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl font-bold text-white shadow-lg shadow-green-500/50 hover:shadow-xl hover:shadow-green-500/70 transform hover:scale-105 transition-all duration-300 overflow-hidden">
+              <Link
+                to={"/about"}
+                className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl font-bold text-white shadow-lg shadow-green-500/50 hover:shadow-xl hover:shadow-green-500/70 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+              >
                 <span className="relative z-10 flex items-center justify-center space-x-2">
                   <span>More About Us</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </Link>
 
-              <button className="group px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl font-bold text-white hover:bg-white/20 transform hover:scale-105 transition-all duration-300">
+              <Link
+                to={"license-procedures"}
+                className="group px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl font-bold text-white hover:bg-white/20 transform hover:scale-105 transition-all duration-300"
+              >
                 <span className="flex items-center justify-center space-x-2">
                   <span>Get Certified</span>
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
-              </button>
+              </Link>
             </div>
 
             {/* Stats */}

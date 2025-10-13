@@ -108,12 +108,18 @@ function Footer() {
             <div className="text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
                 <div className="relative">
-                  <img src={logo} alt="SLeSCA Logo" className="w-20 h-20 rounded-full object-cover border-4 border-white/20 shadow-lg" />
+                  <img
+                    src={logo}
+                    alt="SLeSCA Logo"
+                    className="w-20 h-20 rounded-full object-cover border-4 border-white/20 shadow-lg"
+                  />
                   <div className="absolute inset-0 rounded-full border-2 border-white/30" />
                 </div>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-green-100
-                  to-emerald-200 bg-clip-text text-start text-transparent">
+                  <h2
+                    className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-green-100
+                  to-emerald-200 bg-clip-text text-start text-transparent"
+                  >
                     SLeSCA
                   </h2>
                   <p className="text-green-300 text-sm font-semibold tracking-wider">
@@ -243,7 +249,7 @@ function Footer() {
               </h4>
               <div className="space-y-2">
                 <Link
-                  to="/services/seed-certification"
+                  to="/services/quality-certification"
                   className="block text-gray-300 hover:text-green-400 transition-colors duration-300 hover:translate-x-2 transform py-2"
                 >
                   Seed Certification
@@ -255,13 +261,13 @@ function Footer() {
                   Quality Assurance
                 </Link>
                 <Link
-                  to="/services/farmer-training"
+                  to="/farmer-training"
                   className="block text-gray-300 hover:text-green-400 transition-colors duration-300 hover:translate-x-2 transform py-2"
                 >
                   Farmer Training
                 </Link>
                 <Link
-                  to="/services/licensing"
+                  to="/license-procedures"
                   className="block text-gray-300 hover:text-green-400 transition-colors duration-300 hover:translate-x-2 transform py-2"
                 >
                   Licensing Services
